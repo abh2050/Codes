@@ -1,0 +1,1001 @@
+id,skill,location,certification,education,skill_level,experience,work_preference
+1,pharmacy,Chicago,"['NRP', 'ACLS']",Master,intermediate,11,full-time
+2,physician,New York,"['ACLS', 'CPR', 'NRP']",r,entry-level,23,day shift
+3,nursing,Houston,"['NRP', 'ACLS']",r,entry-level,11,full-time
+4,pharmacy,Chicago,['ACLS'],r,advanced,17,day shift
+5,pharmacy,Los Angeles,"['CPR', 'BLS']",r,intermediate,30,day shift
+6,pharmacy,Philadelphia,"['ACLS', 'NRP']",r,advanced,12,part-time
+7,pharmacy,Chicago,"['NRP', 'BLS']",r,advanced,5,part-time
+8,lab,Philadelphia,"['ACLS', 'CPR', 'PALS']",r,intermediate,13,part-time
+9,pharmacy,Los Angeles,"['PALS', 'NRP', 'CPR']",r,entry-level,25,part-time
+10,physician,New York,"['NRP', 'PALS']",r,entry-level,2,full-time
+11,lab,New York,['CPR'],r,intermediate,27,night shift
+12,nursing,Houston,"['NRP', 'BLS']",r,advanced,8,full-time
+13,radiology,New York,"['CPR', 'NRP', 'PALS']",r,advanced,2,night shift
+14,physician,Houston,"['NRP', 'PALS']",r,entry-level,2,full-time
+15,lab,Houston,"['ACLS', 'PALS']",r,entry-level,5,part-time
+16,radiology,Philadelphia,"['CPR', 'ACLS', 'BLS']",r,intermediate,13,part-time
+17,radiology,Chicago,"['NRP', 'BLS', 'ACLS']",r,entry-level,20,day shift
+18,lab,New York,"['ACLS', 'PALS']",r,advanced,17,full-time
+19,nursing,Los Angeles,['PALS'],r,entry-level,14,full-time
+20,radiology,New York,['BLS'],r,advanced,10,full-time
+21,physician,Chicago,"['NRP', 'PALS']",r,entry-level,2,full-time
+22,physician,New York,['NRP'],r,intermediate,11,day shift
+23,radiology,Los Angeles,['NRP'],r,advanced,25,night shift
+24,radiology,Philadelphia,['NRP'],r,entry-level,14,full-time
+25,nursing,Philadelphia,['NRP'],r,intermediate,25,part-time
+26,pharmacy,Los Angeles,"['NRP', 'PALS', 'BLS']",r,advanced,4,full-time
+27,nursing,Chicago,['NRP'],r,intermediate,21,day shift
+28,physician,Houston,['BLS'],r,intermediate,7,full-time
+29,nursing,Los Angeles,['NRP'],r,entry-level,3,night shift
+30,lab,Chicago,"['BLS', 'PALS']",r,entry-level,0,part-time
+31,physician,Houston,"['CPR', 'NRP', 'PALS']",r,advanced,20,part-time
+32,lab,New York,['NRP'],r,entry-level,26,part-time
+33,physician,Philadelphia,['PALS'],r,intermediate,3,part-time
+34,nursing,Houston,['ACLS'],r,advanced,23,full-time
+35,nursing,Chicago,"['ACLS', 'BLS', 'PALS']",r,advanced,14,day shift
+36,lab,Los Angeles,"['NRP', 'PALS']",r,advanced,10,part-time
+37,nursing,New York,['CPR'],r,entry-level,11,night shift
+38,physician,Philadelphia,"['CPR', 'NRP', 'PALS']",r,intermediate,3,full-time
+39,radiology,Houston,"['BLS', 'ACLS']",r,advanced,30,part-time
+40,radiology,Chicago,"['PALS', 'CPR', 'NRP']",r,entry-level,22,part-time
+41,physician,Chicago,"['NRP', 'CPR']",r,intermediate,12,full-time
+42,physician,Philadelphia,"['BLS', 'CPR']",r,advanced,9,full-time
+43,radiology,New York,"['BLS', 'PALS']",r,advanced,18,part-time
+44,radiology,New York,['CPR'],r,intermediate,25,day shift
+45,nursing,Philadelphia,['BLS'],r,entry-level,5,day shift
+46,nursing,Philadelphia,['NRP'],r,advanced,30,night shift
+47,radiology,Chicago,"['PALS', 'NRP', 'BLS']",r,entry-level,20,night shift
+48,physician,Chicago,['BLS'],r,entry-level,9,day shift
+49,physician,Los Angeles,['BLS'],r,entry-level,5,day shift
+50,nursing,Houston,"['BLS', 'ACLS', 'NRP']",r,intermediate,13,night shift
+51,lab,Los Angeles,['NRP'],r,intermediate,25,full-time
+52,nursing,Houston,['CPR'],r,advanced,22,part-time
+53,radiology,Chicago,['CPR'],r,entry-level,24,part-time
+54,lab,Philadelphia,['CPR'],r,intermediate,18,night shift
+55,physician,Houston,"['NRP', 'PALS', 'ACLS']",r,intermediate,23,part-time
+56,nursing,New York,['CPR'],r,entry-level,16,full-time
+57,nursing,Philadelphia,"['ACLS', 'NRP', 'PALS']",r,advanced,17,night shift
+58,physician,Houston,['PALS'],r,advanced,15,part-time
+59,nursing,Chicago,"['NRP', 'PALS']",r,intermediate,21,part-time
+60,physician,Los Angeles,"['PALS', 'BLS', 'CPR']",r,advanced,15,day shift
+61,physician,Los Angeles,"['NRP', 'CPR']",r,intermediate,19,night shift
+62,pharmacy,Chicago,['PALS'],r,intermediate,9,night shift
+63,physician,New York,"['NRP', 'ACLS', 'CPR']",r,intermediate,20,full-time
+64,pharmacy,Houston,"['ACLS', 'BLS', 'CPR']",r,advanced,20,night shift
+65,radiology,New York,"['ACLS', 'CPR', 'PALS']",r,intermediate,24,day shift
+66,pharmacy,Philadelphia,['CPR'],r,advanced,0,day shift
+67,physician,Philadelphia,"['BLS', 'PALS', 'CPR']",r,intermediate,9,day shift
+68,radiology,Los Angeles,['PALS'],r,intermediate,26,part-time
+69,pharmacy,Houston,"['NRP', 'ACLS', 'PALS']",r,entry-level,24,night shift
+70,physician,Houston,"['CPR', 'NRP']",r,entry-level,13,part-time
+71,lab,New York,"['ACLS', 'NRP', 'BLS']",r,entry-level,17,day shift
+72,nursing,Los Angeles,['NRP'],r,intermediate,27,part-time
+73,lab,Los Angeles,['NRP'],r,advanced,7,night shift
+74,lab,Chicago,"['ACLS', 'PALS']",r,advanced,19,night shift
+75,nursing,Chicago,"['NRP', 'ACLS']",r,entry-level,3,day shift
+76,pharmacy,New York,['ACLS'],r,intermediate,18,full-time
+77,lab,New York,['ACLS'],r,intermediate,25,day shift
+78,radiology,Chicago,"['PALS', 'CPR']",r,intermediate,12,full-time
+79,pharmacy,Houston,['CPR'],r,entry-level,30,night shift
+80,nursing,Houston,"['PALS', 'CPR']",r,advanced,26,night shift
+81,radiology,Houston,['ACLS'],r,intermediate,26,day shift
+82,pharmacy,Los Angeles,"['ACLS', 'BLS', 'NRP']",r,intermediate,2,day shift
+83,lab,Houston,"['ACLS', 'PALS', 'BLS']",r,intermediate,9,full-time
+84,radiology,Philadelphia,"['ACLS', 'CPR', 'NRP']",r,entry-level,0,full-time
+85,pharmacy,Houston,"['PALS', 'NRP', 'ACLS']",r,entry-level,16,part-time
+86,nursing,Houston,"['NRP', 'ACLS']",r,entry-level,2,part-time
+87,lab,New York,['ACLS'],r,advanced,22,day shift
+88,nursing,Houston,['CPR'],r,entry-level,13,full-time
+89,lab,Houston,"['PALS', 'CPR']",r,entry-level,0,day shift
+90,lab,Los Angeles,"['ACLS', 'PALS']",r,advanced,8,full-time
+91,lab,Los Angeles,"['PALS', 'CPR', 'ACLS']",r,entry-level,16,day shift
+92,lab,New York,['ACLS'],r,advanced,3,night shift
+93,pharmacy,Los Angeles,['ACLS'],r,intermediate,12,night shift
+94,pharmacy,Chicago,"['PALS', 'CPR']",r,entry-level,5,night shift
+95,physician,Philadelphia,"['NRP', 'PALS']",r,intermediate,29,full-time
+96,pharmacy,Philadelphia,"['NRP', 'CPR', 'ACLS']",r,intermediate,23,full-time
+97,pharmacy,Los Angeles,['CPR'],r,intermediate,6,part-time
+98,lab,Chicago,"['ACLS', 'PALS', 'BLS']",r,entry-level,18,day shift
+99,physician,Los Angeles,['NRP'],r,intermediate,7,day shift
+100,radiology,Philadelphia,['BLS'],r,intermediate,24,day shift
+101,lab,Philadelphia,['NRP'],r,intermediate,1,part-time
+102,physician,Houston,['ACLS'],r,intermediate,11,day shift
+103,lab,Chicago,"['PALS', 'NRP', 'CPR']",r,intermediate,28,full-time
+104,lab,Houston,['PALS'],r,entry-level,10,day shift
+105,physician,Philadelphia,['CPR'],r,entry-level,13,night shift
+106,pharmacy,Chicago,"['NRP', 'PALS', 'ACLS']",r,intermediate,0,night shift
+107,radiology,New York,['BLS'],r,advanced,3,part-time
+108,physician,Houston,['ACLS'],r,advanced,1,day shift
+109,lab,Chicago,"['ACLS', 'BLS']",r,intermediate,19,night shift
+110,physician,Houston,['PALS'],r,advanced,0,day shift
+111,pharmacy,Chicago,"['BLS', 'ACLS']",r,advanced,5,day shift
+112,lab,New York,"['BLS', 'NRP']",r,intermediate,0,day shift
+113,radiology,Houston,['PALS'],r,advanced,1,night shift
+114,pharmacy,Los Angeles,['NRP'],r,intermediate,10,night shift
+115,radiology,Chicago,['BLS'],r,advanced,28,full-time
+116,nursing,Los Angeles,['NRP'],r,entry-level,23,day shift
+117,pharmacy,Philadelphia,"['PALS', 'ACLS', 'CPR']",r,advanced,20,full-time
+118,lab,Chicago,"['BLS', 'CPR']",r,entry-level,20,part-time
+119,lab,Los Angeles,"['BLS', 'NRP']",r,intermediate,13,day shift
+120,nursing,New York,['BLS'],r,advanced,0,part-time
+121,nursing,Philadelphia,"['BLS', 'ACLS', 'CPR']",r,advanced,29,night shift
+122,pharmacy,Philadelphia,"['ACLS', 'PALS']",r,advanced,21,night shift
+123,nursing,Philadelphia,['CPR'],r,entry-level,30,day shift
+124,pharmacy,Philadelphia,"['NRP', 'BLS']",r,advanced,7,day shift
+125,lab,Houston,['PALS'],r,advanced,16,day shift
+126,nursing,New York,"['ACLS', 'NRP']",r,intermediate,8,day shift
+127,physician,New York,['PALS'],r,intermediate,21,night shift
+128,pharmacy,Los Angeles,"['BLS', 'ACLS', 'CPR']",r,intermediate,13,night shift
+129,pharmacy,Philadelphia,"['ACLS', 'CPR', 'NRP']",r,intermediate,12,night shift
+130,lab,Chicago,['BLS'],r,intermediate,29,part-time
+131,lab,Chicago,['BLS'],r,advanced,17,night shift
+132,physician,Philadelphia,"['ACLS', 'CPR']",r,intermediate,4,part-time
+133,radiology,Chicago,"['ACLS', 'NRP']",r,advanced,18,night shift
+134,pharmacy,Philadelphia,"['CPR', 'PALS', 'BLS']",r,intermediate,17,part-time
+135,radiology,Houston,"['NRP', 'CPR', 'ACLS']",r,entry-level,26,night shift
+136,radiology,Houston,"['BLS', 'NRP', 'PALS']",r,entry-level,20,part-time
+137,pharmacy,Philadelphia,"['ACLS', 'BLS', 'CPR']",r,advanced,23,day shift
+138,nursing,Houston,['PALS'],r,entry-level,7,night shift
+139,pharmacy,Houston,"['CPR', 'PALS']",r,advanced,5,part-time
+140,lab,Los Angeles,"['NRP', 'PALS', 'CPR']",r,intermediate,7,night shift
+141,nursing,Houston,"['PALS', 'NRP', 'ACLS']",r,intermediate,6,full-time
+142,physician,New York,"['PALS', 'ACLS']",r,advanced,5,night shift
+143,physician,Los Angeles,"['BLS', 'ACLS', 'PALS']",r,entry-level,3,full-time
+144,radiology,New York,"['BLS', 'ACLS', 'PALS']",r,advanced,12,full-time
+145,physician,Los Angeles,"['ACLS', 'NRP']",r,advanced,7,day shift
+146,radiology,Philadelphia,"['NRP', 'ACLS']",r,advanced,14,night shift
+147,pharmacy,New York,"['ACLS', 'CPR', 'BLS']",r,advanced,21,part-time
+148,nursing,Chicago,"['ACLS', 'BLS', 'CPR']",r,entry-level,28,part-time
+149,lab,New York,['PALS'],r,intermediate,29,day shift
+150,radiology,New York,"['ACLS', 'CPR']",r,advanced,21,part-time
+151,nursing,Philadelphia,"['BLS', 'ACLS', 'NRP']",r,advanced,1,night shift
+152,pharmacy,Los Angeles,"['NRP', 'PALS']",r,entry-level,17,part-time
+153,lab,Philadelphia,['PALS'],r,advanced,15,part-time
+154,radiology,New York,"['CPR', 'NRP', 'BLS']",r,advanced,3,night shift
+155,nursing,Chicago,"['PALS', 'BLS', 'NRP']",r,entry-level,8,part-time
+156,physician,Los Angeles,"['ACLS', 'PALS']",r,advanced,4,full-time
+157,physician,Houston,['PALS'],r,intermediate,20,full-time
+158,pharmacy,New York,['NRP'],r,entry-level,17,night shift
+159,physician,Chicago,['NRP'],r,intermediate,18,part-time
+160,radiology,Philadelphia,"['PALS', 'ACLS']",r,entry-level,20,day shift
+161,physician,Philadelphia,['PALS'],r,intermediate,27,day shift
+162,physician,Philadelphia,"['PALS', 'CPR']",r,intermediate,11,day shift
+163,nursing,Chicago,"['BLS', 'PALS', 'ACLS']",r,advanced,7,full-time
+164,lab,Chicago,['PALS'],r,intermediate,8,full-time
+165,radiology,New York,['BLS'],r,intermediate,7,night shift
+166,pharmacy,New York,['ACLS'],r,advanced,26,day shift
+167,physician,Philadelphia,['BLS'],r,advanced,28,night shift
+168,pharmacy,Philadelphia,"['BLS', 'CPR']",r,intermediate,29,full-time
+169,nursing,Chicago,"['CPR', 'ACLS', 'BLS']",r,entry-level,27,day shift
+170,nursing,Chicago,['CPR'],r,intermediate,16,full-time
+171,nursing,New York,"['NRP', 'ACLS']",r,entry-level,4,part-time
+172,pharmacy,Chicago,"['CPR', 'PALS', 'BLS']",r,advanced,20,full-time
+173,physician,Chicago,"['BLS', 'PALS', 'CPR']",r,entry-level,17,part-time
+174,lab,New York,['NRP'],r,intermediate,4,part-time
+175,pharmacy,Los Angeles,"['BLS', 'CPR', 'PALS']",r,intermediate,26,day shift
+176,pharmacy,Los Angeles,"['ACLS', 'NRP']",r,intermediate,2,day shift
+177,physician,Los Angeles,"['CPR', 'ACLS', 'PALS']",r,advanced,9,full-time
+178,pharmacy,Houston,['ACLS'],r,entry-level,19,part-time
+179,lab,Los Angeles,['BLS'],r,entry-level,17,night shift
+180,nursing,Chicago,"['CPR', 'PALS']",r,advanced,12,day shift
+181,nursing,Philadelphia,"['PALS', 'BLS']",r,entry-level,27,day shift
+182,physician,New York,['PALS'],r,intermediate,22,full-time
+183,lab,Los Angeles,"['BLS', 'ACLS', 'PALS']",r,intermediate,8,night shift
+184,physician,Houston,"['CPR', 'BLS', 'PALS']",r,entry-level,20,day shift
+185,radiology,Philadelphia,"['PALS', 'ACLS', 'CPR']",r,advanced,22,part-time
+186,lab,New York,"['CPR', 'PALS']",r,entry-level,7,day shift
+187,nursing,Houston,['ACLS'],r,entry-level,22,day shift
+188,lab,Houston,"['BLS', 'PALS']",r,intermediate,21,night shift
+189,nursing,Los Angeles,"['ACLS', 'CPR', 'BLS']",r,advanced,15,night shift
+190,pharmacy,Houston,"['BLS', 'NRP', 'CPR']",r,advanced,13,full-time
+191,nursing,Houston,"['BLS', 'PALS']",r,entry-level,13,night shift
+192,nursing,Philadelphia,"['ACLS', 'PALS', 'BLS']",r,advanced,23,full-time
+193,radiology,Los Angeles,"['CPR', 'ACLS', 'BLS']",r,intermediate,13,full-time
+194,pharmacy,New York,"['BLS', 'ACLS', 'PALS']",r,advanced,19,part-time
+195,nursing,Los Angeles,['NRP'],r,advanced,12,part-time
+196,radiology,Chicago,"['BLS', 'PALS']",r,intermediate,4,day shift
+197,physician,Los Angeles,"['CPR', 'PALS']",r,advanced,5,day shift
+198,nursing,New York,['CPR'],r,entry-level,23,night shift
+199,radiology,Los Angeles,"['CPR', 'PALS', 'BLS']",r,entry-level,6,night shift
+200,lab,New York,['CPR'],r,entry-level,14,day shift
+201,pharmacy,Chicago,['PALS'],r,intermediate,16,part-time
+202,lab,Chicago,"['CPR', 'NRP', 'PALS']",r,advanced,9,day shift
+203,physician,Los Angeles,"['ACLS', 'PALS', 'BLS']",r,advanced,19,night shift
+204,lab,Chicago,"['CPR', 'PALS', 'BLS']",r,advanced,26,day shift
+205,nursing,Philadelphia,"['NRP', 'ACLS']",r,entry-level,0,day shift
+206,lab,Philadelphia,"['ACLS', 'BLS']",r,advanced,10,night shift
+207,nursing,Los Angeles,['PALS'],r,intermediate,7,part-time
+208,lab,New York,"['PALS', 'BLS']",r,intermediate,11,day shift
+209,physician,New York,"['NRP', 'ACLS']",r,intermediate,29,night shift
+210,pharmacy,Chicago,['PALS'],r,entry-level,28,day shift
+211,lab,Philadelphia,['ACLS'],r,entry-level,3,part-time
+212,lab,Chicago,['PALS'],r,intermediate,2,night shift
+213,radiology,New York,"['CPR', 'PALS']",r,intermediate,19,part-time
+214,physician,Philadelphia,"['BLS', 'CPR']",r,advanced,15,part-time
+215,physician,Houston,"['PALS', 'BLS']",r,intermediate,25,full-time
+216,nursing,Chicago,"['BLS', 'ACLS']",r,advanced,3,night shift
+217,physician,New York,"['BLS', 'NRP', 'ACLS']",r,intermediate,16,full-time
+218,pharmacy,Chicago,"['CPR', 'BLS', 'ACLS']",r,entry-level,3,part-time
+219,radiology,Philadelphia,['BLS'],r,intermediate,3,night shift
+220,radiology,Chicago,"['ACLS', 'PALS', 'CPR']",r,advanced,2,part-time
+221,nursing,Chicago,"['ACLS', 'PALS', 'CPR']",r,entry-level,3,part-time
+222,pharmacy,Houston,"['ACLS', 'PALS']",r,intermediate,17,full-time
+223,physician,New York,['CPR'],r,intermediate,1,full-time
+224,lab,Houston,"['CPR', 'NRP']",r,entry-level,21,day shift
+225,nursing,New York,"['BLS', 'ACLS', 'PALS']",r,advanced,16,full-time
+226,lab,Houston,"['NRP', 'PALS']",r,advanced,13,day shift
+227,nursing,Los Angeles,['BLS'],r,entry-level,14,part-time
+228,pharmacy,Houston,['CPR'],r,intermediate,8,day shift
+229,physician,Philadelphia,"['CPR', 'BLS', 'NRP']",r,advanced,0,day shift
+230,physician,New York,"['NRP', 'ACLS']",r,entry-level,9,night shift
+231,radiology,Philadelphia,['BLS'],r,intermediate,29,full-time
+232,pharmacy,Philadelphia,['CPR'],r,entry-level,0,full-time
+233,radiology,Los Angeles,['CPR'],r,advanced,11,part-time
+234,nursing,Houston,"['CPR', 'ACLS', 'PALS']",r,entry-level,22,part-time
+235,pharmacy,Philadelphia,['ACLS'],r,intermediate,30,night shift
+236,physician,Los Angeles,['NRP'],r,advanced,24,part-time
+237,nursing,New York,['CPR'],r,advanced,23,part-time
+238,radiology,New York,"['PALS', 'ACLS', 'NRP']",r,intermediate,4,night shift
+239,pharmacy,New York,"['PALS', 'CPR']",r,advanced,1,day shift
+240,radiology,Los Angeles,"['CPR', 'NRP']",r,entry-level,29,day shift
+241,radiology,New York,"['PALS', 'ACLS', 'CPR']",r,entry-level,9,day shift
+242,pharmacy,Houston,['PALS'],r,advanced,6,night shift
+243,lab,Philadelphia,['ACLS'],r,entry-level,17,full-time
+244,radiology,Chicago,"['PALS', 'BLS', 'CPR']",r,entry-level,24,day shift
+245,radiology,New York,"['PALS', 'ACLS', 'NRP']",r,entry-level,22,day shift
+246,physician,New York,"['ACLS', 'CPR', 'PALS']",r,entry-level,4,night shift
+247,radiology,Los Angeles,"['CPR', 'NRP', 'PALS']",r,entry-level,13,night shift
+248,nursing,New York,['BLS'],r,entry-level,30,night shift
+249,pharmacy,Chicago,"['PALS', 'ACLS', 'CPR']",r,intermediate,27,part-time
+250,physician,New York,"['PALS', 'BLS']",r,intermediate,4,full-time
+251,lab,Los Angeles,"['PALS', 'CPR', 'BLS']",r,entry-level,7,full-time
+252,pharmacy,Houston,"['BLS', 'ACLS', 'CPR']",r,entry-level,5,full-time
+253,physician,Philadelphia,['CPR'],r,entry-level,12,day shift
+254,physician,Los Angeles,['ACLS'],r,advanced,28,part-time
+255,pharmacy,Houston,"['PALS', 'ACLS']",r,intermediate,20,night shift
+256,radiology,Houston,"['CPR', 'PALS', 'BLS']",r,entry-level,25,day shift
+257,nursing,New York,"['PALS', 'ACLS', 'CPR']",r,entry-level,5,full-time
+258,nursing,Los Angeles,"['PALS', 'ACLS']",r,advanced,15,day shift
+259,pharmacy,Houston,"['ACLS', 'BLS']",r,entry-level,3,night shift
+260,pharmacy,Chicago,"['BLS', 'PALS', 'NRP']",r,advanced,10,part-time
+261,radiology,Philadelphia,['BLS'],r,intermediate,22,night shift
+262,nursing,Los Angeles,['ACLS'],r,intermediate,18,day shift
+263,physician,Houston,"['BLS', 'NRP', 'CPR']",r,entry-level,27,full-time
+264,physician,New York,"['ACLS', 'CPR']",r,intermediate,26,part-time
+265,pharmacy,Los Angeles,"['ACLS', 'CPR']",r,advanced,4,night shift
+266,pharmacy,Houston,"['ACLS', 'BLS', 'CPR']",r,entry-level,29,day shift
+267,physician,Chicago,"['ACLS', 'BLS', 'CPR']",r,intermediate,21,part-time
+268,lab,New York,['NRP'],r,entry-level,17,night shift
+269,physician,Philadelphia,"['NRP', 'ACLS', 'CPR']",r,entry-level,1,day shift
+270,nursing,Chicago,"['BLS', 'CPR']",r,entry-level,27,night shift
+271,nursing,Chicago,"['BLS', 'PALS']",r,advanced,15,day shift
+272,pharmacy,Chicago,"['PALS', 'BLS', 'ACLS']",r,entry-level,17,day shift
+273,nursing,New York,"['CPR', 'BLS']",r,entry-level,9,full-time
+274,lab,Philadelphia,"['PALS', 'BLS', 'CPR']",r,intermediate,12,part-time
+275,physician,New York,"['BLS', 'NRP']",r,advanced,6,day shift
+276,physician,Los Angeles,"['CPR', 'NRP', 'ACLS']",r,advanced,24,part-time
+277,nursing,New York,"['ACLS', 'NRP']",r,entry-level,1,day shift
+278,physician,New York,['CPR'],r,entry-level,3,night shift
+279,lab,New York,"['BLS', 'ACLS']",r,entry-level,21,day shift
+280,physician,Los Angeles,"['BLS', 'NRP', 'PALS']",r,intermediate,3,part-time
+281,lab,Philadelphia,['PALS'],r,intermediate,0,part-time
+282,pharmacy,New York,"['ACLS', 'CPR']",r,intermediate,22,full-time
+283,physician,Chicago,['CPR'],r,advanced,10,night shift
+284,pharmacy,Chicago,['PALS'],r,intermediate,24,part-time
+285,radiology,Houston,"['CPR', 'ACLS']",r,intermediate,24,night shift
+286,nursing,Chicago,"['NRP', 'BLS', 'CPR']",r,intermediate,3,night shift
+287,radiology,Houston,"['ACLS', 'NRP', 'PALS']",r,advanced,14,day shift
+288,radiology,New York,['PALS'],r,intermediate,20,night shift
+289,nursing,Houston,"['PALS', 'ACLS', 'NRP']",r,advanced,28,full-time
+290,nursing,Houston,"['NRP', 'PALS']",r,entry-level,10,part-time
+291,pharmacy,New York,"['PALS', 'NRP', 'CPR']",r,entry-level,8,part-time
+292,radiology,Chicago,['ACLS'],r,intermediate,25,day shift
+293,lab,Chicago,"['BLS', 'ACLS', 'NRP']",r,intermediate,29,day shift
+294,pharmacy,Houston,"['NRP', 'PALS', 'BLS']",r,advanced,9,night shift
+295,lab,Chicago,['CPR'],r,advanced,28,day shift
+296,physician,Houston,"['NRP', 'CPR', 'PALS']",r,entry-level,11,full-time
+297,lab,Los Angeles,"['CPR', 'ACLS', 'PALS']",r,advanced,15,night shift
+298,physician,New York,"['CPR', 'PALS']",r,entry-level,30,night shift
+299,pharmacy,Chicago,['NRP'],r,intermediate,30,day shift
+300,lab,Philadelphia,['PALS'],r,entry-level,11,day shift
+301,physician,Los Angeles,"['NRP', 'PALS']",r,intermediate,9,part-time
+302,physician,Los Angeles,"['BLS', 'NRP', 'CPR']",r,entry-level,28,full-time
+303,nursing,New York,"['BLS', 'CPR', 'NRP']",r,entry-level,15,day shift
+304,physician,Chicago,"['CPR', 'ACLS', 'BLS']",r,entry-level,20,part-time
+305,lab,Chicago,['ACLS'],r,intermediate,4,part-time
+306,pharmacy,Chicago,"['PALS', 'CPR', 'BLS']",r,intermediate,26,part-time
+307,lab,New York,"['NRP', 'PALS', 'CPR']",r,intermediate,23,night shift
+308,physician,Chicago,"['ACLS', 'NRP']",r,entry-level,24,day shift
+309,nursing,Los Angeles,"['CPR', 'BLS', 'PALS']",r,advanced,9,night shift
+310,radiology,New York,"['CPR', 'PALS', 'ACLS']",r,entry-level,14,day shift
+311,lab,Houston,"['BLS', 'PALS', 'CPR']",r,entry-level,10,night shift
+312,nursing,Philadelphia,['BLS'],r,intermediate,15,night shift
+313,pharmacy,Los Angeles,"['PALS', 'NRP', 'CPR']",r,advanced,7,part-time
+314,physician,Chicago,['PALS'],r,advanced,30,night shift
+315,nursing,Los Angeles,['PALS'],r,entry-level,30,part-time
+316,lab,New York,"['BLS', 'PALS', 'ACLS']",r,advanced,10,night shift
+317,radiology,Chicago,"['NRP', 'ACLS', 'BLS']",r,entry-level,15,night shift
+318,nursing,Chicago,['CPR'],r,entry-level,10,night shift
+319,lab,New York,"['BLS', 'ACLS', 'PALS']",r,intermediate,11,day shift
+320,lab,Houston,"['PALS', 'CPR', 'BLS']",r,entry-level,11,part-time
+321,pharmacy,Philadelphia,"['BLS', 'NRP', 'PALS']",r,intermediate,25,night shift
+322,radiology,Philadelphia,"['NRP', 'BLS', 'PALS']",r,advanced,20,full-time
+323,radiology,Houston,"['CPR', 'NRP', 'BLS']",r,entry-level,29,full-time
+324,physician,Los Angeles,"['NRP', 'PALS']",r,advanced,28,full-time
+325,radiology,New York,"['ACLS', 'CPR']",r,entry-level,21,part-time
+326,physician,Houston,"['NRP', 'PALS']",r,advanced,5,night shift
+327,radiology,Houston,"['NRP', 'BLS', 'ACLS']",r,intermediate,10,night shift
+328,lab,Houston,"['CPR', 'BLS']",r,entry-level,5,full-time
+329,radiology,New York,['BLS'],r,intermediate,23,part-time
+330,lab,New York,['CPR'],r,intermediate,20,day shift
+331,nursing,Houston,['ACLS'],r,intermediate,0,night shift
+332,physician,Philadelphia,"['ACLS', 'PALS']",r,advanced,7,full-time
+333,pharmacy,Philadelphia,"['PALS', 'NRP', 'ACLS']",r,entry-level,27,part-time
+334,lab,Houston,['CPR'],r,entry-level,25,night shift
+335,physician,Los Angeles,"['NRP', 'CPR']",r,intermediate,2,part-time
+336,lab,Philadelphia,"['PALS', 'BLS', 'CPR']",r,intermediate,8,full-time
+337,physician,Chicago,"['BLS', 'PALS']",r,entry-level,13,day shift
+338,physician,Houston,"['ACLS', 'NRP', 'CPR']",r,advanced,27,day shift
+339,lab,New York,"['CPR', 'ACLS']",r,entry-level,30,day shift
+340,pharmacy,Chicago,['PALS'],r,advanced,29,night shift
+341,physician,Philadelphia,['BLS'],r,entry-level,1,full-time
+342,radiology,Houston,"['CPR', 'PALS', 'NRP']",r,advanced,0,night shift
+343,physician,Los Angeles,"['BLS', 'PALS', 'CPR']",r,entry-level,25,day shift
+344,radiology,Chicago,['ACLS'],r,advanced,28,day shift
+345,pharmacy,New York,['PALS'],r,intermediate,19,full-time
+346,radiology,New York,['PALS'],r,advanced,1,day shift
+347,nursing,New York,"['BLS', 'CPR']",r,intermediate,21,night shift
+348,pharmacy,Chicago,"['CPR', 'NRP']",r,entry-level,27,part-time
+349,nursing,Los Angeles,"['BLS', 'PALS']",r,intermediate,5,full-time
+350,pharmacy,Los Angeles,"['PALS', 'ACLS']",r,advanced,0,night shift
+351,nursing,Los Angeles,"['NRP', 'BLS', 'ACLS']",r,advanced,29,night shift
+352,nursing,Houston,"['ACLS', 'CPR', 'PALS']",r,intermediate,24,night shift
+353,radiology,New York,['BLS'],r,advanced,9,day shift
+354,nursing,Philadelphia,"['CPR', 'ACLS']",r,entry-level,12,day shift
+355,lab,Chicago,"['BLS', 'PALS']",r,intermediate,7,day shift
+356,pharmacy,Philadelphia,"['ACLS', 'CPR']",r,intermediate,10,day shift
+357,nursing,Chicago,"['BLS', 'NRP']",r,entry-level,15,part-time
+358,radiology,New York,"['CPR', 'ACLS']",r,advanced,20,full-time
+359,pharmacy,Houston,"['NRP', 'ACLS', 'CPR']",r,entry-level,7,full-time
+360,radiology,Philadelphia,['CPR'],r,advanced,2,part-time
+361,physician,Los Angeles,"['BLS', 'ACLS', 'PALS']",r,intermediate,11,day shift
+362,nursing,Los Angeles,"['BLS', 'NRP']",r,intermediate,16,part-time
+363,nursing,Chicago,"['BLS', 'PALS', 'CPR']",r,entry-level,1,part-time
+364,radiology,Los Angeles,['ACLS'],r,intermediate,21,day shift
+365,nursing,New York,"['PALS', 'ACLS', 'BLS']",r,intermediate,19,part-time
+366,nursing,Philadelphia,"['NRP', 'PALS']",r,entry-level,5,part-time
+367,physician,Houston,"['ACLS', 'PALS']",r,advanced,25,full-time
+368,nursing,Los Angeles,"['BLS', 'PALS', 'ACLS']",r,entry-level,29,full-time
+369,physician,New York,['CPR'],r,intermediate,8,part-time
+370,nursing,New York,['NRP'],r,entry-level,16,day shift
+371,radiology,New York,['NRP'],r,intermediate,6,part-time
+372,pharmacy,Los Angeles,"['PALS', 'NRP']",r,intermediate,17,night shift
+373,physician,Los Angeles,"['NRP', 'BLS', 'ACLS']",r,advanced,21,night shift
+374,nursing,Los Angeles,"['CPR', 'ACLS', 'NRP']",r,entry-level,24,night shift
+375,pharmacy,Philadelphia,['BLS'],r,advanced,28,night shift
+376,pharmacy,Chicago,['ACLS'],r,advanced,30,day shift
+377,radiology,New York,"['NRP', 'ACLS', 'BLS']",r,advanced,18,full-time
+378,radiology,Chicago,"['BLS', 'PALS', 'ACLS']",r,intermediate,9,day shift
+379,physician,Philadelphia,['ACLS'],r,intermediate,12,full-time
+380,pharmacy,Los Angeles,"['BLS', 'ACLS']",r,entry-level,15,part-time
+381,lab,Los Angeles,['PALS'],r,advanced,18,night shift
+382,pharmacy,Chicago,['NRP'],r,advanced,21,full-time
+383,physician,Los Angeles,"['ACLS', 'NRP', 'PALS']",r,entry-level,26,part-time
+384,radiology,Los Angeles,"['PALS', 'ACLS', 'BLS']",r,intermediate,4,full-time
+385,lab,Houston,['NRP'],r,entry-level,5,part-time
+386,lab,New York,"['CPR', 'ACLS']",r,advanced,28,full-time
+387,nursing,Chicago,"['PALS', 'ACLS']",r,entry-level,3,night shift
+388,pharmacy,Philadelphia,"['PALS', 'NRP']",r,intermediate,20,night shift
+389,nursing,Philadelphia,"['PALS', 'BLS']",r,advanced,25,day shift
+390,pharmacy,Chicago,['ACLS'],r,intermediate,16,day shift
+391,nursing,Los Angeles,"['ACLS', 'BLS', 'PALS']",r,intermediate,12,full-time
+392,lab,New York,['ACLS'],r,advanced,1,day shift
+393,nursing,Los Angeles,"['PALS', 'CPR']",r,advanced,0,full-time
+394,radiology,New York,"['PALS', 'BLS', 'NRP']",r,intermediate,15,full-time
+395,physician,Houston,['PALS'],r,advanced,1,day shift
+396,lab,Houston,['PALS'],r,advanced,19,day shift
+397,physician,Philadelphia,"['ACLS', 'NRP']",r,intermediate,15,night shift
+398,radiology,Houston,"['PALS', 'NRP']",r,intermediate,23,full-time
+399,physician,Los Angeles,"['PALS', 'BLS', 'NRP']",r,advanced,30,day shift
+400,nursing,Chicago,"['CPR', 'PALS']",r,advanced,30,night shift
+401,pharmacy,Houston,"['CPR', 'PALS']",r,advanced,12,part-time
+402,physician,Philadelphia,['NRP'],r,entry-level,9,day shift
+403,nursing,Chicago,"['ACLS', 'BLS']",r,entry-level,14,day shift
+404,pharmacy,Philadelphia,"['ACLS', 'CPR']",r,entry-level,12,full-time
+405,pharmacy,Los Angeles,"['CPR', 'BLS']",r,intermediate,9,night shift
+406,radiology,Houston,"['BLS', 'NRP']",r,entry-level,17,day shift
+407,lab,Los Angeles,['CPR'],r,advanced,30,day shift
+408,physician,Houston,"['BLS', 'PALS', 'NRP']",r,advanced,24,full-time
+409,pharmacy,Los Angeles,"['PALS', 'BLS', 'NRP']",r,entry-level,7,full-time
+410,radiology,Chicago,"['BLS', 'ACLS']",r,intermediate,18,full-time
+411,physician,Los Angeles,"['PALS', 'NRP']",r,advanced,6,day shift
+412,physician,Los Angeles,['NRP'],r,advanced,16,night shift
+413,nursing,New York,['CPR'],r,advanced,8,full-time
+414,nursing,Houston,"['PALS', 'BLS']",r,intermediate,11,day shift
+415,radiology,Chicago,"['BLS', 'PALS', 'ACLS']",r,advanced,29,night shift
+416,lab,Houston,"['NRP', 'ACLS']",r,advanced,6,part-time
+417,pharmacy,Houston,"['PALS', 'NRP', 'CPR']",r,intermediate,20,day shift
+418,lab,Philadelphia,"['PALS', 'ACLS']",r,advanced,21,part-time
+419,nursing,Chicago,['NRP'],r,intermediate,10,day shift
+420,physician,Philadelphia,['ACLS'],r,intermediate,21,day shift
+421,lab,Houston,['PALS'],r,intermediate,20,full-time
+422,radiology,Philadelphia,"['CPR', 'ACLS', 'PALS']",r,entry-level,15,full-time
+423,physician,New York,['PALS'],r,entry-level,23,full-time
+424,lab,Chicago,['CPR'],r,intermediate,18,night shift
+425,pharmacy,Philadelphia,['NRP'],r,intermediate,25,full-time
+426,physician,New York,"['ACLS', 'CPR']",r,advanced,23,day shift
+427,radiology,New York,['NRP'],r,intermediate,14,full-time
+428,nursing,Los Angeles,"['NRP', 'CPR', 'PALS']",r,intermediate,17,full-time
+429,radiology,Houston,"['PALS', 'BLS', 'ACLS']",r,entry-level,17,full-time
+430,pharmacy,Chicago,"['NRP', 'BLS', 'ACLS']",r,advanced,10,part-time
+431,physician,Philadelphia,"['BLS', 'NRP']",r,entry-level,11,part-time
+432,radiology,Chicago,"['PALS', 'BLS', 'ACLS']",r,intermediate,30,day shift
+433,pharmacy,New York,"['PALS', 'NRP', 'ACLS']",r,entry-level,19,night shift
+434,radiology,New York,['BLS'],r,advanced,13,night shift
+435,lab,Philadelphia,"['BLS', 'ACLS']",r,advanced,17,part-time
+436,radiology,New York,['NRP'],r,entry-level,15,day shift
+437,radiology,Chicago,"['BLS', 'ACLS']",r,advanced,13,full-time
+438,lab,New York,"['CPR', 'ACLS', 'NRP']",r,entry-level,1,day shift
+439,nursing,Los Angeles,"['BLS', 'CPR', 'ACLS']",r,intermediate,18,full-time
+440,pharmacy,Los Angeles,['NRP'],r,intermediate,26,full-time
+441,physician,Houston,"['PALS', 'ACLS']",r,intermediate,30,night shift
+442,radiology,Los Angeles,['PALS'],r,advanced,12,part-time
+443,physician,Los Angeles,['NRP'],r,advanced,0,part-time
+444,physician,Los Angeles,['ACLS'],r,advanced,30,night shift
+445,radiology,Chicago,"['ACLS', 'PALS']",r,entry-level,8,night shift
+446,physician,New York,"['PALS', 'BLS', 'ACLS']",r,intermediate,26,full-time
+447,pharmacy,Philadelphia,['ACLS'],r,advanced,25,night shift
+448,nursing,New York,['ACLS'],r,advanced,0,night shift
+449,lab,New York,['ACLS'],r,advanced,25,night shift
+450,physician,New York,"['PALS', 'ACLS', 'BLS']",r,entry-level,19,night shift
+451,pharmacy,Philadelphia,"['CPR', 'BLS', 'PALS']",r,entry-level,15,full-time
+452,radiology,Los Angeles,"['BLS', 'NRP', 'CPR']",r,intermediate,8,night shift
+453,physician,New York,['CPR'],r,entry-level,19,part-time
+454,radiology,New York,['CPR'],r,intermediate,4,night shift
+455,nursing,New York,"['NRP', 'ACLS']",r,entry-level,25,day shift
+456,pharmacy,Houston,"['PALS', 'NRP', 'CPR']",r,entry-level,4,part-time
+457,lab,Los Angeles,"['PALS', 'CPR']",r,entry-level,16,day shift
+458,radiology,Los Angeles,"['NRP', 'PALS']",r,advanced,14,night shift
+459,physician,New York,"['NRP', 'CPR']",r,intermediate,19,full-time
+460,radiology,Houston,"['BLS', 'NRP']",r,advanced,13,full-time
+461,radiology,Los Angeles,"['ACLS', 'CPR']",r,intermediate,3,full-time
+462,radiology,New York,"['BLS', 'NRP']",r,intermediate,23,part-time
+463,lab,New York,"['ACLS', 'CPR']",r,intermediate,6,day shift
+464,radiology,Houston,"['ACLS', 'CPR']",r,entry-level,6,full-time
+465,radiology,Philadelphia,"['BLS', 'ACLS', 'CPR']",r,advanced,1,full-time
+466,pharmacy,Los Angeles,['BLS'],r,entry-level,9,day shift
+467,pharmacy,Houston,"['ACLS', 'BLS']",r,advanced,20,full-time
+468,physician,Chicago,"['ACLS', 'CPR']",r,advanced,24,day shift
+469,nursing,New York,"['BLS', 'PALS', 'CPR']",r,advanced,15,night shift
+470,radiology,New York,"['BLS', 'ACLS']",r,advanced,7,full-time
+471,lab,Houston,"['CPR', 'ACLS', 'BLS']",r,entry-level,19,part-time
+472,pharmacy,Philadelphia,"['BLS', 'CPR', 'NRP']",r,intermediate,24,night shift
+473,pharmacy,Los Angeles,['PALS'],r,entry-level,6,part-time
+474,physician,Chicago,['CPR'],r,entry-level,2,night shift
+475,lab,New York,['PALS'],r,entry-level,17,part-time
+476,nursing,Los Angeles,"['NRP', 'BLS', 'PALS']",r,intermediate,6,day shift
+477,radiology,Chicago,"['BLS', 'PALS']",r,entry-level,14,day shift
+478,lab,Philadelphia,"['NRP', 'ACLS']",r,advanced,27,part-time
+479,physician,Chicago,['BLS'],r,entry-level,1,day shift
+480,radiology,New York,['NRP'],r,advanced,26,part-time
+481,lab,Philadelphia,"['CPR', 'NRP', 'PALS']",r,advanced,25,part-time
+482,physician,Houston,['PALS'],r,entry-level,22,day shift
+483,radiology,Chicago,"['NRP', 'ACLS']",r,advanced,23,part-time
+484,physician,New York,['PALS'],r,advanced,25,day shift
+485,physician,Philadelphia,"['BLS', 'ACLS']",r,intermediate,8,full-time
+486,physician,Houston,"['PALS', 'CPR', 'NRP']",r,advanced,26,full-time
+487,lab,Philadelphia,['ACLS'],r,intermediate,4,day shift
+488,lab,Chicago,"['CPR', 'ACLS']",r,entry-level,19,part-time
+489,pharmacy,Philadelphia,"['BLS', 'CPR', 'ACLS']",r,entry-level,15,night shift
+490,nursing,Philadelphia,"['CPR', 'BLS']",r,intermediate,21,day shift
+491,pharmacy,Los Angeles,"['BLS', 'CPR']",r,entry-level,17,full-time
+492,radiology,Chicago,"['ACLS', 'PALS']",r,intermediate,15,full-time
+493,nursing,Houston,['CPR'],r,advanced,11,full-time
+494,physician,Chicago,['CPR'],r,advanced,30,day shift
+495,physician,Houston,"['CPR', 'ACLS', 'PALS']",r,entry-level,11,day shift
+496,pharmacy,Los Angeles,['ACLS'],r,entry-level,13,day shift
+497,lab,Chicago,"['ACLS', 'BLS', 'NRP']",r,entry-level,22,night shift
+498,physician,Houston,['PALS'],r,entry-level,28,day shift
+499,nursing,Philadelphia,"['ACLS', 'PALS', 'CPR']",r,intermediate,19,full-time
+500,lab,Philadelphia,['CPR'],r,entry-level,7,night shift
+501,radiology,Houston,"['PALS', 'BLS']",r,entry-level,7,night shift
+502,physician,Houston,"['BLS', 'NRP']",r,intermediate,16,full-time
+503,nursing,New York,"['CPR', 'BLS', 'PALS']",r,entry-level,22,night shift
+504,nursing,New York,['BLS'],r,entry-level,14,full-time
+505,nursing,New York,"['PALS', 'NRP']",r,intermediate,24,full-time
+506,pharmacy,Philadelphia,['PALS'],r,advanced,15,night shift
+507,nursing,Philadelphia,"['NRP', 'BLS']",r,advanced,12,night shift
+508,nursing,Philadelphia,"['PALS', 'NRP', 'ACLS']",r,intermediate,11,part-time
+509,physician,Houston,"['PALS', 'CPR']",r,entry-level,13,day shift
+510,physician,Houston,"['NRP', 'BLS', 'ACLS']",r,entry-level,4,full-time
+511,nursing,Los Angeles,['NRP'],r,intermediate,16,part-time
+512,lab,Los Angeles,"['NRP', 'BLS', 'ACLS']",r,entry-level,0,day shift
+513,radiology,Chicago,"['PALS', 'BLS', 'CPR']",r,advanced,8,part-time
+514,radiology,Philadelphia,"['BLS', 'ACLS', 'PALS']",r,advanced,28,night shift
+515,nursing,Philadelphia,"['ACLS', 'PALS', 'CPR']",r,advanced,18,night shift
+516,pharmacy,Philadelphia,['PALS'],r,intermediate,27,full-time
+517,nursing,New York,"['CPR', 'NRP']",r,entry-level,5,night shift
+518,physician,Los Angeles,['NRP'],r,advanced,25,day shift
+519,radiology,Houston,['ACLS'],r,advanced,20,day shift
+520,lab,Houston,['ACLS'],r,intermediate,11,day shift
+521,nursing,New York,"['CPR', 'PALS']",r,entry-level,21,part-time
+522,physician,Chicago,['CPR'],r,intermediate,17,day shift
+523,nursing,New York,"['BLS', 'PALS']",r,intermediate,27,full-time
+524,lab,Los Angeles,['CPR'],r,intermediate,23,full-time
+525,nursing,Philadelphia,"['CPR', 'PALS']",r,advanced,18,part-time
+526,nursing,Houston,"['PALS', 'BLS', 'ACLS']",r,entry-level,26,full-time
+527,lab,Houston,"['PALS', 'ACLS']",r,entry-level,14,full-time
+528,nursing,Houston,"['PALS', 'ACLS']",r,entry-level,26,night shift
+529,pharmacy,Houston,['ACLS'],r,intermediate,9,night shift
+530,radiology,Chicago,"['PALS', 'ACLS']",r,entry-level,9,night shift
+531,pharmacy,Philadelphia,"['BLS', 'CPR']",r,intermediate,24,day shift
+532,radiology,Chicago,"['NRP', 'PALS', 'CPR']",r,entry-level,13,full-time
+533,physician,Los Angeles,"['NRP', 'ACLS']",r,advanced,19,day shift
+534,nursing,New York,"['BLS', 'CPR']",r,entry-level,29,full-time
+535,nursing,Philadelphia,"['ACLS', 'PALS', 'BLS']",r,advanced,23,part-time
+536,lab,New York,"['CPR', 'ACLS']",r,intermediate,22,night shift
+537,nursing,Philadelphia,['NRP'],r,advanced,21,full-time
+538,pharmacy,Los Angeles,"['ACLS', 'BLS']",r,intermediate,15,full-time
+539,nursing,New York,"['NRP', 'BLS']",r,intermediate,4,part-time
+540,pharmacy,Philadelphia,"['ACLS', 'BLS', 'CPR']",r,entry-level,20,part-time
+541,nursing,Los Angeles,"['ACLS', 'PALS', 'CPR']",r,advanced,21,day shift
+542,physician,Chicago,"['PALS', 'NRP']",r,entry-level,10,part-time
+543,pharmacy,Chicago,['BLS'],r,entry-level,13,day shift
+544,pharmacy,Chicago,"['CPR', 'BLS', 'ACLS']",r,entry-level,18,night shift
+545,physician,New York,"['BLS', 'PALS']",r,intermediate,18,day shift
+546,pharmacy,Los Angeles,"['BLS', 'CPR']",r,entry-level,5,part-time
+547,lab,Philadelphia,"['ACLS', 'BLS']",r,intermediate,4,day shift
+548,pharmacy,Philadelphia,['BLS'],r,intermediate,18,day shift
+549,nursing,New York,"['CPR', 'PALS']",r,intermediate,9,night shift
+550,lab,Houston,"['PALS', 'NRP']",r,intermediate,16,part-time
+551,lab,New York,"['PALS', 'ACLS', 'CPR']",r,entry-level,6,day shift
+552,physician,Philadelphia,"['CPR', 'NRP', 'PALS']",r,intermediate,9,day shift
+553,nursing,New York,"['ACLS', 'PALS', 'CPR']",r,advanced,7,part-time
+554,radiology,Los Angeles,"['BLS', 'PALS']",r,entry-level,14,day shift
+555,physician,Chicago,"['PALS', 'ACLS']",r,intermediate,12,day shift
+556,lab,New York,"['ACLS', 'CPR', 'PALS']",r,intermediate,10,night shift
+557,lab,Los Angeles,"['CPR', 'BLS', 'ACLS']",r,intermediate,15,night shift
+558,lab,Houston,"['PALS', 'NRP', 'BLS']",r,entry-level,9,part-time
+559,radiology,Philadelphia,['CPR'],r,intermediate,24,full-time
+560,physician,Houston,['PALS'],r,entry-level,18,night shift
+561,lab,New York,"['PALS', 'BLS']",r,intermediate,14,night shift
+562,lab,Philadelphia,"['CPR', 'ACLS', 'BLS']",r,intermediate,4,night shift
+563,pharmacy,New York,"['PALS', 'ACLS', 'NRP']",r,advanced,9,part-time
+564,physician,Houston,"['PALS', 'NRP', 'CPR']",r,advanced,12,day shift
+565,lab,Los Angeles,"['NRP', 'CPR']",r,intermediate,6,full-time
+566,nursing,Houston,"['ACLS', 'BLS', 'PALS']",r,intermediate,4,night shift
+567,radiology,New York,"['ACLS', 'BLS']",r,intermediate,17,full-time
+568,lab,New York,"['BLS', 'PALS', 'NRP']",r,intermediate,14,part-time
+569,pharmacy,New York,['PALS'],r,advanced,9,night shift
+570,radiology,New York,['ACLS'],r,advanced,6,part-time
+571,nursing,New York,"['NRP', 'CPR']",r,entry-level,29,day shift
+572,lab,Chicago,"['BLS', 'PALS', 'NRP']",r,intermediate,29,night shift
+573,nursing,Houston,"['CPR', 'PALS']",r,intermediate,0,part-time
+574,lab,Los Angeles,"['NRP', 'PALS']",r,entry-level,14,day shift
+575,pharmacy,Chicago,"['NRP', 'BLS']",r,intermediate,6,part-time
+576,radiology,Los Angeles,"['NRP', 'BLS', 'CPR']",r,entry-level,4,day shift
+577,physician,Chicago,"['PALS', 'CPR']",r,entry-level,29,day shift
+578,pharmacy,Chicago,"['PALS', 'BLS', 'CPR']",r,advanced,21,full-time
+579,radiology,Philadelphia,['BLS'],r,advanced,1,full-time
+580,radiology,Los Angeles,"['ACLS', 'BLS', 'NRP']",r,intermediate,12,night shift
+581,physician,Philadelphia,"['BLS', 'NRP']",r,advanced,3,night shift
+582,pharmacy,Los Angeles,"['CPR', 'ACLS']",r,advanced,7,day shift
+583,radiology,Philadelphia,"['BLS', 'PALS']",r,advanced,17,full-time
+584,physician,Los Angeles,"['PALS', 'NRP', 'BLS']",r,intermediate,7,day shift
+585,lab,Philadelphia,"['BLS', 'PALS', 'CPR']",r,intermediate,25,night shift
+586,nursing,Philadelphia,"['CPR', 'BLS', 'NRP']",r,advanced,13,part-time
+587,radiology,Chicago,['CPR'],r,intermediate,3,day shift
+588,nursing,Los Angeles,"['NRP', 'CPR']",r,entry-level,7,day shift
+589,nursing,Chicago,['CPR'],r,advanced,9,part-time
+590,radiology,New York,"['CPR', 'BLS', 'NRP']",r,entry-level,17,full-time
+591,nursing,Chicago,"['BLS', 'ACLS']",r,advanced,30,part-time
+592,radiology,Los Angeles,"['ACLS', 'PALS', 'CPR']",r,advanced,24,day shift
+593,physician,Philadelphia,"['CPR', 'ACLS', 'BLS']",r,entry-level,9,night shift
+594,nursing,New York,"['CPR', 'PALS']",r,entry-level,0,night shift
+595,physician,Philadelphia,"['CPR', 'BLS', 'ACLS']",r,intermediate,12,night shift
+596,nursing,New York,"['PALS', 'ACLS', 'BLS']",r,intermediate,30,full-time
+597,pharmacy,Houston,['BLS'],r,intermediate,14,night shift
+598,pharmacy,Philadelphia,"['NRP', 'BLS', 'PALS']",r,entry-level,7,part-time
+599,lab,Chicago,"['ACLS', 'CPR']",r,advanced,15,full-time
+600,lab,Houston,"['NRP', 'ACLS']",r,advanced,17,night shift
+601,physician,Chicago,"['NRP', 'CPR', 'BLS']",r,entry-level,27,night shift
+602,lab,Houston,['NRP'],r,entry-level,25,day shift
+603,radiology,Los Angeles,"['ACLS', 'BLS']",r,advanced,30,part-time
+604,nursing,Philadelphia,"['ACLS', 'NRP']",r,advanced,1,full-time
+605,lab,Chicago,"['ACLS', 'NRP', 'PALS']",r,advanced,10,day shift
+606,nursing,Los Angeles,"['BLS', 'ACLS']",r,advanced,3,part-time
+607,nursing,New York,['BLS'],r,entry-level,2,night shift
+608,nursing,Philadelphia,['ACLS'],r,intermediate,0,day shift
+609,radiology,Philadelphia,"['NRP', 'CPR', 'PALS']",r,entry-level,13,night shift
+610,nursing,Chicago,"['PALS', 'ACLS']",r,entry-level,1,part-time
+611,pharmacy,Los Angeles,"['BLS', 'NRP']",r,advanced,12,night shift
+612,physician,New York,['NRP'],r,entry-level,7,night shift
+613,radiology,New York,"['NRP', 'ACLS', 'PALS']",r,intermediate,20,night shift
+614,pharmacy,Houston,['NRP'],r,intermediate,23,part-time
+615,nursing,New York,"['BLS', 'ACLS']",r,advanced,26,full-time
+616,radiology,Chicago,['BLS'],r,entry-level,4,night shift
+617,radiology,Philadelphia,"['PALS', 'BLS', 'NRP']",r,entry-level,18,full-time
+618,nursing,New York,"['CPR', 'BLS', 'PALS']",r,entry-level,10,day shift
+619,physician,Houston,"['NRP', 'PALS']",r,advanced,4,part-time
+620,lab,Philadelphia,"['PALS', 'NRP', 'BLS']",r,entry-level,29,night shift
+621,physician,Houston,"['ACLS', 'CPR', 'NRP']",r,advanced,4,day shift
+622,radiology,New York,"['ACLS', 'BLS', 'PALS']",r,intermediate,20,full-time
+623,nursing,Houston,"['ACLS', 'PALS', 'BLS']",r,advanced,30,day shift
+624,lab,Chicago,"['ACLS', 'NRP', 'CPR']",r,intermediate,21,part-time
+625,lab,Chicago,"['ACLS', 'NRP', 'PALS']",r,advanced,24,part-time
+626,lab,Houston,"['NRP', 'CPR']",r,intermediate,4,day shift
+627,lab,New York,"['ACLS', 'PALS']",r,entry-level,7,part-time
+628,nursing,Chicago,['PALS'],r,intermediate,28,day shift
+629,nursing,Philadelphia,['CPR'],r,entry-level,23,full-time
+630,radiology,Houston,['PALS'],r,intermediate,30,day shift
+631,radiology,Philadelphia,"['NRP', 'BLS', 'PALS']",r,entry-level,23,night shift
+632,physician,Chicago,"['ACLS', 'CPR', 'NRP']",r,advanced,29,part-time
+633,physician,Chicago,['BLS'],r,advanced,4,day shift
+634,radiology,Los Angeles,['CPR'],r,entry-level,8,part-time
+635,pharmacy,Chicago,"['NRP', 'ACLS', 'PALS']",r,entry-level,19,night shift
+636,nursing,Houston,"['NRP', 'CPR', 'BLS']",r,advanced,29,day shift
+637,pharmacy,Houston,['ACLS'],r,entry-level,27,day shift
+638,pharmacy,Houston,"['CPR', 'ACLS']",r,intermediate,14,day shift
+639,lab,Los Angeles,"['ACLS', 'BLS', 'PALS']",r,entry-level,10,part-time
+640,lab,Chicago,"['ACLS', 'NRP', 'CPR']",r,advanced,6,night shift
+641,radiology,Houston,['PALS'],r,intermediate,17,full-time
+642,radiology,Chicago,"['BLS', 'PALS', 'NRP']",r,intermediate,24,full-time
+643,physician,Los Angeles,"['PALS', 'BLS', 'NRP']",r,intermediate,24,full-time
+644,physician,New York,"['CPR', 'NRP', 'PALS']",r,advanced,11,day shift
+645,nursing,Houston,"['NRP', 'ACLS', 'CPR']",r,advanced,26,night shift
+646,pharmacy,New York,"['CPR', 'ACLS', 'PALS']",r,advanced,20,part-time
+647,radiology,Philadelphia,['CPR'],r,entry-level,12,day shift
+648,lab,Chicago,"['BLS', 'NRP', 'ACLS']",r,entry-level,23,night shift
+649,radiology,Houston,"['NRP', 'BLS', 'ACLS']",r,advanced,4,part-time
+650,radiology,New York,"['PALS', 'NRP', 'ACLS']",r,advanced,29,part-time
+651,pharmacy,Los Angeles,"['ACLS', 'BLS']",r,intermediate,26,night shift
+652,lab,Los Angeles,['ACLS'],r,entry-level,24,part-time
+653,radiology,New York,"['BLS', 'PALS', 'ACLS']",r,intermediate,2,day shift
+654,nursing,Houston,"['NRP', 'PALS', 'BLS']",r,entry-level,15,night shift
+655,lab,Los Angeles,['BLS'],r,intermediate,0,full-time
+656,physician,Los Angeles,"['CPR', 'NRP', 'BLS']",r,advanced,14,night shift
+657,radiology,New York,"['ACLS', 'PALS']",r,intermediate,0,full-time
+658,pharmacy,New York,"['BLS', 'CPR']",r,intermediate,23,full-time
+659,physician,New York,"['BLS', 'ACLS']",r,intermediate,3,night shift
+660,nursing,Los Angeles,"['PALS', 'NRP']",r,entry-level,16,part-time
+661,lab,Los Angeles,"['BLS', 'PALS']",r,intermediate,11,day shift
+662,radiology,Los Angeles,"['NRP', 'ACLS']",r,advanced,10,full-time
+663,pharmacy,Philadelphia,['NRP'],r,advanced,20,day shift
+664,physician,Philadelphia,['BLS'],r,intermediate,7,night shift
+665,nursing,Houston,"['NRP', 'PALS', 'ACLS']",r,entry-level,28,full-time
+666,nursing,Houston,['BLS'],r,advanced,2,day shift
+667,radiology,Houston,"['BLS', 'ACLS']",r,entry-level,5,day shift
+668,physician,New York,"['PALS', 'NRP', 'BLS']",r,entry-level,7,part-time
+669,radiology,Los Angeles,"['NRP', 'BLS', 'CPR']",r,intermediate,15,night shift
+670,nursing,Philadelphia,['CPR'],r,entry-level,24,night shift
+671,lab,Los Angeles,"['CPR', 'BLS', 'ACLS']",r,advanced,11,part-time
+672,lab,Philadelphia,"['NRP', 'BLS', 'PALS']",r,entry-level,27,night shift
+673,nursing,Houston,"['BLS', 'NRP']",r,entry-level,27,night shift
+674,pharmacy,Philadelphia,['NRP'],r,intermediate,22,full-time
+675,radiology,Houston,"['ACLS', 'CPR']",r,advanced,30,full-time
+676,physician,Chicago,['NRP'],r,advanced,0,night shift
+677,lab,Chicago,['CPR'],r,intermediate,4,day shift
+678,physician,Los Angeles,"['ACLS', 'BLS']",r,advanced,16,day shift
+679,physician,Chicago,['CPR'],r,entry-level,11,full-time
+680,nursing,Los Angeles,['CPR'],r,advanced,26,part-time
+681,nursing,Philadelphia,"['CPR', 'BLS', 'PALS']",r,entry-level,22,day shift
+682,nursing,Houston,"['CPR', 'PALS', 'NRP']",r,intermediate,15,night shift
+683,nursing,Philadelphia,"['PALS', 'NRP']",r,advanced,11,part-time
+684,radiology,Philadelphia,"['BLS', 'CPR']",r,intermediate,26,part-time
+685,nursing,Houston,['CPR'],r,advanced,29,night shift
+686,nursing,Chicago,"['ACLS', 'NRP', 'CPR']",r,entry-level,16,full-time
+687,radiology,Chicago,"['NRP', 'ACLS']",r,intermediate,4,part-time
+688,radiology,Los Angeles,['CPR'],r,advanced,13,part-time
+689,physician,Philadelphia,"['NRP', 'BLS']",r,advanced,6,full-time
+690,lab,New York,"['NRP', 'ACLS']",r,intermediate,2,night shift
+691,lab,New York,"['BLS', 'NRP', 'CPR']",r,entry-level,9,night shift
+692,radiology,Los Angeles,"['PALS', 'BLS']",r,intermediate,9,part-time
+693,physician,Philadelphia,"['PALS', 'CPR']",r,entry-level,28,day shift
+694,physician,New York,"['NRP', 'CPR', 'ACLS']",r,entry-level,20,day shift
+695,physician,Philadelphia,"['NRP', 'PALS', 'CPR']",r,intermediate,2,night shift
+696,radiology,Los Angeles,"['BLS', 'PALS', 'CPR']",r,advanced,29,night shift
+697,physician,New York,"['BLS', 'NRP', 'PALS']",r,intermediate,4,day shift
+698,radiology,Philadelphia,"['BLS', 'PALS', 'ACLS']",r,entry-level,9,day shift
+699,radiology,Houston,['BLS'],r,advanced,11,night shift
+700,physician,Philadelphia,"['ACLS', 'BLS', 'PALS']",r,advanced,30,part-time
+701,physician,Chicago,"['NRP', 'CPR', 'ACLS']",r,entry-level,17,part-time
+702,nursing,Chicago,"['NRP', 'BLS']",r,intermediate,13,full-time
+703,radiology,Chicago,"['BLS', 'PALS', 'NRP']",r,intermediate,11,full-time
+704,nursing,Philadelphia,"['NRP', 'ACLS', 'PALS']",r,entry-level,11,night shift
+705,nursing,New York,"['BLS', 'NRP']",r,intermediate,19,night shift
+706,radiology,Philadelphia,"['NRP', 'ACLS', 'CPR']",r,intermediate,23,full-time
+707,radiology,Chicago,"['CPR', 'NRP']",r,advanced,3,full-time
+708,pharmacy,New York,"['ACLS', 'CPR']",r,advanced,2,night shift
+709,lab,Philadelphia,['BLS'],r,advanced,21,part-time
+710,nursing,Houston,['ACLS'],r,entry-level,27,day shift
+711,radiology,Chicago,"['CPR', 'NRP', 'ACLS']",r,intermediate,0,night shift
+712,physician,Los Angeles,['NRP'],r,advanced,18,full-time
+713,physician,Chicago,"['CPR', 'NRP']",r,intermediate,29,part-time
+714,physician,New York,"['NRP', 'PALS']",r,entry-level,23,full-time
+715,pharmacy,Houston,"['BLS', 'PALS']",r,intermediate,1,night shift
+716,radiology,Los Angeles,"['ACLS', 'PALS', 'NRP']",r,entry-level,28,full-time
+717,pharmacy,Chicago,"['BLS', 'ACLS', 'PALS']",r,entry-level,7,day shift
+718,pharmacy,Los Angeles,"['PALS', 'NRP']",r,advanced,18,night shift
+719,radiology,New York,"['CPR', 'PALS']",r,entry-level,21,full-time
+720,nursing,Houston,"['BLS', 'CPR']",r,intermediate,29,night shift
+721,lab,New York,"['ACLS', 'CPR', 'PALS']",r,intermediate,23,full-time
+722,pharmacy,Houston,"['BLS', 'CPR']",r,advanced,30,night shift
+723,nursing,Chicago,"['PALS', 'CPR', 'NRP']",r,advanced,5,part-time
+724,pharmacy,Los Angeles,['NRP'],r,entry-level,15,part-time
+725,lab,Houston,['ACLS'],r,entry-level,7,night shift
+726,lab,New York,['PALS'],r,entry-level,15,day shift
+727,radiology,New York,"['NRP', 'PALS', 'CPR']",r,entry-level,13,part-time
+728,pharmacy,Chicago,"['BLS', 'CPR']",r,entry-level,22,part-time
+729,nursing,Houston,"['PALS', 'ACLS']",r,entry-level,30,part-time
+730,nursing,Los Angeles,['CPR'],r,entry-level,26,day shift
+731,radiology,Los Angeles,"['CPR', 'PALS']",r,entry-level,4,day shift
+732,radiology,Houston,['PALS'],r,advanced,0,night shift
+733,radiology,Philadelphia,"['ACLS', 'CPR', 'NRP']",r,entry-level,1,day shift
+734,nursing,Chicago,"['NRP', 'PALS']",r,entry-level,20,day shift
+735,physician,Philadelphia,['BLS'],r,advanced,3,full-time
+736,pharmacy,New York,['CPR'],r,intermediate,25,part-time
+737,radiology,Los Angeles,"['PALS', 'CPR', 'NRP']",r,entry-level,25,full-time
+738,physician,New York,['NRP'],r,advanced,4,night shift
+739,radiology,New York,"['ACLS', 'PALS', 'NRP']",r,advanced,13,part-time
+740,physician,Houston,"['PALS', 'ACLS']",r,advanced,7,day shift
+741,radiology,Philadelphia,['NRP'],r,entry-level,1,day shift
+742,nursing,Chicago,"['CPR', 'BLS']",r,advanced,5,day shift
+743,nursing,Los Angeles,"['CPR', 'BLS']",r,entry-level,3,part-time
+744,lab,Philadelphia,"['ACLS', 'PALS']",r,advanced,25,night shift
+745,nursing,Houston,['ACLS'],r,intermediate,12,full-time
+746,pharmacy,Philadelphia,"['ACLS', 'BLS']",r,intermediate,2,day shift
+747,physician,Los Angeles,"['ACLS', 'BLS', 'CPR']",r,entry-level,7,part-time
+748,radiology,Chicago,"['PALS', 'NRP']",r,entry-level,9,night shift
+749,radiology,Houston,['PALS'],r,entry-level,10,night shift
+750,radiology,New York,"['PALS', 'NRP', 'BLS']",r,advanced,25,night shift
+751,pharmacy,Los Angeles,"['BLS', 'CPR']",r,entry-level,1,day shift
+752,lab,Houston,"['ACLS', 'PALS']",r,entry-level,16,day shift
+753,physician,Chicago,"['NRP', 'BLS', 'ACLS']",r,entry-level,5,night shift
+754,physician,New York,['ACLS'],r,intermediate,0,day shift
+755,physician,Houston,"['NRP', 'PALS', 'BLS']",r,advanced,16,day shift
+756,lab,New York,['BLS'],r,entry-level,22,night shift
+757,radiology,New York,"['PALS', 'CPR']",r,advanced,20,night shift
+758,lab,Houston,"['NRP', 'BLS']",r,intermediate,26,day shift
+759,radiology,New York,"['PALS', 'CPR', 'BLS']",r,entry-level,1,night shift
+760,radiology,New York,['ACLS'],r,intermediate,27,part-time
+761,pharmacy,Houston,"['BLS', 'ACLS', 'PALS']",r,entry-level,7,day shift
+762,lab,Chicago,"['BLS', 'ACLS']",r,entry-level,21,part-time
+763,lab,Chicago,"['NRP', 'BLS']",r,advanced,26,part-time
+764,physician,Los Angeles,['NRP'],r,entry-level,28,day shift
+765,nursing,Philadelphia,"['BLS', 'PALS']",r,intermediate,5,full-time
+766,lab,New York,"['NRP', 'PALS']",r,entry-level,1,day shift
+767,physician,Houston,"['BLS', 'CPR']",r,intermediate,1,part-time
+768,lab,Philadelphia,['NRP'],r,intermediate,8,full-time
+769,physician,New York,"['ACLS', 'BLS']",r,entry-level,19,full-time
+770,lab,Philadelphia,"['CPR', 'PALS', 'NRP']",r,intermediate,24,full-time
+771,nursing,Philadelphia,"['PALS', 'CPR']",r,entry-level,23,part-time
+772,nursing,Chicago,"['CPR', 'NRP', 'ACLS']",r,entry-level,15,day shift
+773,pharmacy,Houston,"['PALS', 'NRP', 'ACLS']",r,advanced,21,day shift
+774,lab,Houston,"['PALS', 'ACLS', 'BLS']",r,entry-level,26,full-time
+775,pharmacy,Chicago,['NRP'],r,advanced,15,full-time
+776,pharmacy,Philadelphia,"['NRP', 'ACLS', 'PALS']",r,entry-level,26,full-time
+777,nursing,Chicago,"['CPR', 'PALS']",r,advanced,15,part-time
+778,lab,Los Angeles,['BLS'],r,advanced,28,part-time
+779,lab,Houston,"['BLS', 'NRP', 'CPR']",r,intermediate,4,day shift
+780,radiology,New York,"['NRP', 'ACLS']",r,entry-level,15,part-time
+781,pharmacy,Los Angeles,"['NRP', 'PALS', 'ACLS']",r,entry-level,30,full-time
+782,lab,Chicago,"['PALS', 'BLS', 'NRP']",r,entry-level,15,full-time
+783,physician,Chicago,"['ACLS', 'CPR']",r,advanced,8,full-time
+784,lab,Los Angeles,"['PALS', 'ACLS', 'BLS']",r,advanced,12,day shift
+785,nursing,Houston,"['PALS', 'CPR', 'BLS']",r,advanced,26,part-time
+786,nursing,Philadelphia,"['NRP', 'CPR', 'PALS']",r,intermediate,20,day shift
+787,pharmacy,Chicago,"['BLS', 'PALS', 'NRP']",r,entry-level,14,full-time
+788,nursing,Houston,"['CPR', 'PALS', 'ACLS']",r,advanced,10,part-time
+789,pharmacy,Chicago,"['BLS', 'ACLS']",r,intermediate,5,part-time
+790,pharmacy,Philadelphia,"['CPR', 'PALS']",r,intermediate,24,day shift
+791,radiology,Chicago,"['NRP', 'CPR', 'ACLS']",r,entry-level,25,night shift
+792,pharmacy,Los Angeles,['ACLS'],r,advanced,16,day shift
+793,nursing,Los Angeles,['BLS'],r,entry-level,25,full-time
+794,pharmacy,New York,"['NRP', 'BLS']",r,intermediate,26,full-time
+795,physician,Houston,"['BLS', 'ACLS']",r,advanced,7,part-time
+796,lab,Philadelphia,"['BLS', 'NRP']",r,intermediate,0,night shift
+797,physician,New York,"['NRP', 'CPR']",r,intermediate,16,day shift
+798,lab,Los Angeles,"['CPR', 'NRP', 'BLS']",r,entry-level,2,full-time
+799,nursing,Los Angeles,"['CPR', 'ACLS']",r,advanced,21,part-time
+800,physician,New York,['PALS'],r,intermediate,14,full-time
+801,radiology,Houston,['CPR'],r,entry-level,16,full-time
+802,nursing,New York,"['BLS', 'CPR', 'PALS']",r,advanced,29,night shift
+803,physician,Houston,"['ACLS', 'NRP', 'PALS']",r,entry-level,11,night shift
+804,physician,New York,['NRP'],r,intermediate,20,part-time
+805,physician,Houston,"['PALS', 'ACLS']",r,intermediate,27,night shift
+806,pharmacy,Houston,['ACLS'],r,intermediate,7,night shift
+807,physician,Houston,['BLS'],r,intermediate,21,full-time
+808,pharmacy,Houston,['NRP'],r,intermediate,17,part-time
+809,lab,Los Angeles,['PALS'],r,advanced,13,night shift
+810,physician,Chicago,"['BLS', 'CPR', 'PALS']",r,intermediate,24,full-time
+811,nursing,Houston,"['ACLS', 'CPR']",r,intermediate,0,day shift
+812,radiology,Los Angeles,"['PALS', 'BLS', 'NRP']",r,advanced,30,night shift
+813,pharmacy,Chicago,"['NRP', 'CPR', 'PALS']",r,advanced,22,part-time
+814,physician,Los Angeles,['ACLS'],r,entry-level,1,night shift
+815,nursing,Chicago,['PALS'],r,entry-level,22,day shift
+816,nursing,Chicago,"['NRP', 'ACLS', 'PALS']",r,entry-level,21,day shift
+817,pharmacy,Chicago,['BLS'],r,intermediate,26,full-time
+818,radiology,Philadelphia,"['BLS', 'PALS', 'NRP']",r,entry-level,15,full-time
+819,radiology,New York,['CPR'],r,advanced,10,day shift
+820,physician,Chicago,"['PALS', 'BLS', 'ACLS']",r,intermediate,19,part-time
+821,pharmacy,Chicago,"['NRP', 'PALS']",r,intermediate,18,part-time
+822,lab,New York,['BLS'],r,entry-level,16,day shift
+823,nursing,Philadelphia,"['BLS', 'ACLS']",r,advanced,26,full-time
+824,physician,Los Angeles,"['ACLS', 'PALS']",r,intermediate,19,day shift
+825,radiology,Houston,"['NRP', 'PALS', 'CPR']",r,advanced,7,night shift
+826,nursing,Los Angeles,"['NRP', 'ACLS', 'PALS']",r,advanced,29,full-time
+827,pharmacy,Los Angeles,"['ACLS', 'CPR']",r,entry-level,23,night shift
+828,pharmacy,Los Angeles,['NRP'],r,advanced,0,night shift
+829,radiology,Houston,"['PALS', 'CPR', 'ACLS']",r,advanced,16,part-time
+830,physician,Houston,['CPR'],r,advanced,20,full-time
+831,nursing,Chicago,['CPR'],r,entry-level,26,full-time
+832,lab,Chicago,"['NRP', 'BLS', 'CPR']",r,advanced,9,part-time
+833,lab,Philadelphia,['BLS'],r,intermediate,18,night shift
+834,pharmacy,New York,"['ACLS', 'PALS']",r,advanced,5,full-time
+835,nursing,New York,"['BLS', 'NRP', 'ACLS']",r,intermediate,14,night shift
+836,pharmacy,Philadelphia,"['PALS', 'NRP', 'CPR']",r,advanced,11,full-time
+837,radiology,Chicago,['PALS'],r,advanced,24,day shift
+838,nursing,New York,"['BLS', 'CPR', 'PALS']",r,advanced,1,night shift
+839,radiology,Chicago,"['PALS', 'BLS']",r,intermediate,26,night shift
+840,radiology,Chicago,"['ACLS', 'PALS', 'BLS']",r,entry-level,28,full-time
+841,physician,Philadelphia,"['ACLS', 'BLS', 'CPR']",r,entry-level,30,night shift
+842,radiology,Los Angeles,['BLS'],r,intermediate,14,day shift
+843,physician,Chicago,"['BLS', 'ACLS']",r,intermediate,8,night shift
+844,radiology,New York,"['CPR', 'BLS']",r,advanced,13,day shift
+845,radiology,Philadelphia,"['NRP', 'BLS', 'CPR']",r,entry-level,5,full-time
+846,radiology,Philadelphia,"['NRP', 'PALS']",r,advanced,7,part-time
+847,radiology,Houston,"['PALS', 'BLS']",r,entry-level,10,part-time
+848,pharmacy,New York,['NRP'],r,intermediate,15,day shift
+849,radiology,Chicago,"['PALS', 'CPR', 'NRP']",r,advanced,3,full-time
+850,nursing,New York,"['PALS', 'BLS']",r,entry-level,10,day shift
+851,nursing,Philadelphia,['NRP'],r,intermediate,30,part-time
+852,nursing,New York,"['PALS', 'ACLS', 'CPR']",r,advanced,5,full-time
+853,physician,Houston,['NRP'],r,entry-level,12,part-time
+854,lab,Philadelphia,"['CPR', 'ACLS', 'BLS']",r,entry-level,9,part-time
+855,pharmacy,Los Angeles,"['PALS', 'ACLS']",r,intermediate,21,full-time
+856,pharmacy,New York,['NRP'],r,entry-level,15,part-time
+857,pharmacy,Los Angeles,"['PALS', 'CPR', 'BLS']",r,entry-level,26,day shift
+858,pharmacy,Houston,"['CPR', 'ACLS']",r,entry-level,2,full-time
+859,physician,Los Angeles,['NRP'],r,entry-level,6,full-time
+860,pharmacy,Houston,['ACLS'],r,intermediate,26,day shift
+861,physician,Houston,"['CPR', 'ACLS', 'PALS']",r,entry-level,9,part-time
+862,nursing,Philadelphia,"['NRP', 'PALS', 'CPR']",r,entry-level,8,part-time
+863,lab,New York,"['ACLS', 'BLS', 'CPR']",r,entry-level,23,full-time
+864,radiology,Houston,"['BLS', 'NRP', 'ACLS']",r,entry-level,8,day shift
+865,physician,New York,['BLS'],r,entry-level,19,full-time
+866,radiology,Chicago,"['PALS', 'BLS', 'NRP']",r,intermediate,23,part-time
+867,lab,Los Angeles,"['ACLS', 'CPR', 'PALS']",r,intermediate,24,full-time
+868,lab,Los Angeles,['ACLS'],r,advanced,17,full-time
+869,pharmacy,Chicago,"['NRP', 'PALS', 'CPR']",r,entry-level,30,night shift
+870,physician,Los Angeles,['ACLS'],r,advanced,25,full-time
+871,physician,Chicago,"['ACLS', 'BLS']",r,advanced,13,full-time
+872,nursing,New York,"['ACLS', 'PALS']",r,intermediate,29,night shift
+873,physician,Houston,['ACLS'],r,entry-level,5,part-time
+874,lab,Philadelphia,['BLS'],r,entry-level,13,night shift
+875,physician,New York,"['ACLS', 'NRP']",r,advanced,3,part-time
+876,nursing,Houston,"['CPR', 'PALS', 'ACLS']",r,advanced,11,part-time
+877,nursing,Chicago,"['CPR', 'PALS', 'ACLS']",r,entry-level,4,night shift
+878,nursing,New York,"['ACLS', 'CPR', 'PALS']",r,intermediate,19,full-time
+879,nursing,Houston,"['ACLS', 'NRP', 'CPR']",r,intermediate,3,day shift
+880,radiology,Chicago,"['NRP', 'PALS', 'CPR']",r,intermediate,6,night shift
+881,pharmacy,Los Angeles,"['BLS', 'CPR', 'NRP']",r,advanced,18,day shift
+882,physician,Philadelphia,"['CPR', 'NRP']",r,intermediate,28,full-time
+883,lab,New York,"['CPR', 'ACLS', 'PALS']",r,advanced,16,part-time
+884,pharmacy,Los Angeles,['BLS'],r,entry-level,10,part-time
+885,pharmacy,Houston,['CPR'],r,entry-level,24,night shift
+886,physician,Chicago,"['ACLS', 'PALS', 'NRP']",r,advanced,6,day shift
+887,nursing,Houston,"['CPR', 'BLS', 'ACLS']",r,entry-level,14,part-time
+888,radiology,Chicago,"['CPR', 'ACLS']",r,entry-level,7,part-time
+889,radiology,New York,"['PALS', 'BLS']",r,intermediate,6,night shift
+890,lab,New York,"['NRP', 'ACLS']",r,intermediate,12,day shift
+891,physician,Philadelphia,['BLS'],r,entry-level,30,part-time
+892,radiology,Los Angeles,"['ACLS', 'BLS', 'PALS']",r,advanced,11,day shift
+893,pharmacy,New York,['NRP'],r,intermediate,13,part-time
+894,nursing,New York,"['BLS', 'CPR', 'ACLS']",r,advanced,27,part-time
+895,physician,Los Angeles,"['NRP', 'PALS']",r,advanced,28,full-time
+896,lab,Philadelphia,"['PALS', 'ACLS']",r,entry-level,17,day shift
+897,physician,Philadelphia,"['PALS', 'ACLS']",r,entry-level,17,night shift
+898,nursing,Chicago,"['ACLS', 'PALS', 'CPR']",r,advanced,4,night shift
+899,nursing,Los Angeles,"['CPR', 'ACLS', 'BLS']",r,entry-level,5,part-time
+900,pharmacy,New York,"['NRP', 'BLS', 'PALS']",r,intermediate,21,night shift
+901,lab,Philadelphia,['ACLS'],r,entry-level,7,part-time
+902,radiology,Philadelphia,"['ACLS', 'PALS']",r,entry-level,26,full-time
+903,pharmacy,Chicago,"['NRP', 'ACLS']",r,entry-level,17,day shift
+904,radiology,Los Angeles,"['CPR', 'NRP']",r,advanced,17,day shift
+905,pharmacy,Houston,"['NRP', 'PALS', 'BLS']",r,intermediate,27,full-time
+906,physician,Philadelphia,"['PALS', 'CPR', 'ACLS']",r,entry-level,9,full-time
+907,physician,Los Angeles,"['ACLS', 'NRP', 'CPR']",r,advanced,28,day shift
+908,lab,Chicago,['BLS'],r,intermediate,13,night shift
+909,pharmacy,Chicago,"['NRP', 'BLS', 'CPR']",r,entry-level,10,night shift
+910,physician,Houston,['NRP'],r,advanced,24,part-time
+911,pharmacy,New York,['NRP'],r,intermediate,24,day shift
+912,radiology,New York,"['BLS', 'NRP', 'CPR']",r,advanced,2,part-time
+913,nursing,Houston,"['PALS', 'BLS']",r,entry-level,7,day shift
+914,physician,Philadelphia,['BLS'],r,entry-level,12,day shift
+915,physician,Philadelphia,"['PALS', 'CPR']",r,intermediate,26,part-time
+916,radiology,Philadelphia,"['BLS', 'CPR', 'ACLS']",r,entry-level,19,part-time
+917,lab,Chicago,"['ACLS', 'BLS']",r,entry-level,23,part-time
+918,nursing,Houston,['NRP'],r,intermediate,15,day shift
+919,radiology,Los Angeles,['ACLS'],r,entry-level,18,full-time
+920,pharmacy,Houston,"['BLS', 'NRP']",r,entry-level,30,night shift
+921,nursing,Chicago,"['BLS', 'NRP', 'PALS']",r,intermediate,13,full-time
+922,pharmacy,New York,"['BLS', 'ACLS']",r,entry-level,29,day shift
+923,lab,Philadelphia,['BLS'],r,entry-level,6,night shift
+924,physician,Chicago,['PALS'],r,entry-level,10,day shift
+925,radiology,Los Angeles,"['ACLS', 'PALS', 'NRP']",r,intermediate,5,part-time
+926,physician,Los Angeles,"['BLS', 'CPR']",r,advanced,20,full-time
+927,physician,Los Angeles,"['BLS', 'CPR', 'PALS']",r,intermediate,4,part-time
+928,lab,Philadelphia,['ACLS'],r,intermediate,1,full-time
+929,radiology,Philadelphia,"['NRP', 'CPR']",r,entry-level,27,day shift
+930,physician,Chicago,"['PALS', 'ACLS']",r,advanced,8,night shift
+931,radiology,Chicago,"['CPR', 'BLS']",r,advanced,1,full-time
+932,nursing,Chicago,['BLS'],r,intermediate,15,full-time
+933,physician,Chicago,"['ACLS', 'CPR', 'PALS']",r,advanced,15,part-time
+934,radiology,Philadelphia,['NRP'],r,entry-level,26,night shift
+935,pharmacy,New York,"['BLS', 'NRP', 'CPR']",r,entry-level,8,night shift
+936,radiology,Los Angeles,"['BLS', 'ACLS', 'PALS']",r,entry-level,27,full-time
+937,radiology,Houston,"['BLS', 'ACLS', 'CPR']",r,intermediate,27,night shift
+938,lab,New York,"['BLS', 'PALS', 'ACLS']",r,intermediate,25,night shift
+939,lab,Los Angeles,"['BLS', 'PALS']",r,intermediate,29,full-time
+940,nursing,Philadelphia,"['ACLS', 'CPR', 'PALS']",r,intermediate,13,part-time
+941,physician,Philadelphia,['BLS'],r,intermediate,20,part-time
+942,radiology,Philadelphia,"['CPR', 'ACLS']",r,advanced,11,night shift
+943,nursing,Philadelphia,"['CPR', 'ACLS', 'PALS']",r,advanced,3,part-time
+944,radiology,Chicago,"['CPR', 'ACLS']",r,intermediate,0,part-time
+945,pharmacy,Philadelphia,['ACLS'],r,advanced,19,full-time
+946,radiology,Houston,['ACLS'],r,entry-level,0,part-time
+947,lab,Los Angeles,"['ACLS', 'PALS']",r,entry-level,25,day shift
+948,radiology,Los Angeles,"['PALS', 'BLS', 'CPR']",r,entry-level,7,full-time
+949,physician,Chicago,['ACLS'],r,intermediate,16,night shift
+950,pharmacy,Chicago,['PALS'],r,intermediate,0,part-time
+951,radiology,New York,['PALS'],r,intermediate,13,full-time
+952,physician,Los Angeles,"['BLS', 'NRP', 'CPR']",r,advanced,9,part-time
+953,radiology,New York,['CPR'],r,intermediate,5,night shift
+954,lab,Los Angeles,"['ACLS', 'BLS', 'NRP']",r,entry-level,19,part-time
+955,nursing,Philadelphia,"['BLS', 'NRP', 'CPR']",r,intermediate,13,night shift
+956,radiology,Philadelphia,"['BLS', 'ACLS']",r,entry-level,2,night shift
+957,radiology,Chicago,['ACLS'],r,advanced,24,night shift
+958,physician,Houston,"['CPR', 'PALS']",r,intermediate,13,part-time
+959,physician,Los Angeles,"['CPR', 'PALS']",r,entry-level,25,night shift
+960,nursing,Los Angeles,"['NRP', 'BLS', 'ACLS']",r,intermediate,18,part-time
+961,radiology,Chicago,"['NRP', 'PALS']",r,advanced,21,full-time
+962,physician,Los Angeles,"['NRP', 'CPR']",r,entry-level,1,part-time
+963,nursing,Chicago,['BLS'],r,entry-level,12,night shift
+964,nursing,Houston,"['ACLS', 'PALS']",r,intermediate,28,day shift
+965,pharmacy,Los Angeles,"['BLS', 'NRP', 'PALS']",r,advanced,0,night shift
+966,physician,Los Angeles,"['CPR', 'PALS', 'BLS']",r,advanced,25,night shift
+967,radiology,Houston,"['NRP', 'ACLS']",r,intermediate,21,full-time
+968,physician,New York,"['NRP', 'ACLS']",r,entry-level,11,part-time
+969,pharmacy,Philadelphia,"['BLS', 'ACLS', 'PALS']",r,advanced,14,day shift
+970,nursing,Los Angeles,"['PALS', 'ACLS']",r,advanced,14,part-time
+971,physician,New York,"['ACLS', 'CPR']",r,entry-level,2,full-time
+972,nursing,Houston,"['BLS', 'ACLS', 'PALS']",r,intermediate,6,day shift
+973,lab,Houston,"['NRP', 'CPR', 'BLS']",r,entry-level,2,part-time
+974,radiology,Los Angeles,"['CPR', 'PALS', 'NRP']",r,entry-level,28,day shift
+975,radiology,Philadelphia,"['PALS', 'ACLS', 'CPR']",r,entry-level,14,part-time
+976,radiology,Philadelphia,"['BLS', 'ACLS', 'NRP']",r,intermediate,3,day shift
+977,radiology,Chicago,"['BLS', 'CPR', 'NRP']",r,advanced,5,part-time
+978,physician,Houston,['BLS'],r,entry-level,3,day shift
+979,physician,Los Angeles,"['CPR', 'NRP', 'BLS']",r,intermediate,15,part-time
+980,nursing,Philadelphia,"['BLS', 'PALS', 'CPR']",r,advanced,24,full-time
+981,pharmacy,Los Angeles,['ACLS'],r,advanced,4,full-time
+982,lab,Philadelphia,"['BLS', 'CPR', 'PALS']",r,intermediate,12,full-time
+983,nursing,Philadelphia,['PALS'],r,advanced,30,full-time
+984,pharmacy,Houston,['BLS'],r,entry-level,8,full-time
+985,physician,Chicago,"['CPR', 'BLS']",r,entry-level,14,day shift
+986,lab,Los Angeles,['BLS'],r,intermediate,0,night shift
+987,nursing,Houston,"['CPR', 'NRP', 'ACLS']",r,advanced,0,night shift
+988,radiology,Chicago,"['BLS', 'ACLS', 'NRP']",r,entry-level,30,day shift
+989,radiology,New York,"['BLS', 'ACLS', 'PALS']",r,advanced,16,part-time
+990,radiology,Houston,['BLS'],r,advanced,21,night shift
+991,physician,New York,"['PALS', 'ACLS', 'CPR']",r,intermediate,29,part-time
+992,lab,Chicago,"['ACLS', 'PALS', 'NRP']",r,entry-level,2,day shift
+993,nursing,Chicago,"['BLS', 'ACLS', 'NRP']",r,advanced,23,day shift
+994,physician,New York,['BLS'],r,advanced,28,full-time
+995,nursing,Philadelphia,['NRP'],r,advanced,9,part-time
+996,physician,Philadelphia,['CPR'],r,intermediate,24,day shift
+997,nursing,Chicago,"['CPR', 'BLS']",r,intermediate,0,day shift
+998,radiology,Los Angeles,"['ACLS', 'NRP', 'CPR']",r,advanced,17,part-time
+999,pharmacy,Chicago,['BLS'],r,entry-level,28,night shift
+1000,pharmacy,Philadelphia,"['CPR', 'NRP']",r,entry-level,13,day shift

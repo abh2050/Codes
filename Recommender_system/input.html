@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Form</title>
+    <style>
+      label, input {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Job Form</h1>
+    <form id="job-form">
+      <label for="skill">Skill:</label>
+      <input type="text" id="skill" name="skill" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="certification_required">Certification Required:</label>
+      <input type="text" id="certification_required" name="certification_required" required>
+
+      <label for="education_required">Education Required:</label>
+      <input type="text" id="education_required" name="education_required" required>
+
+      <label for="skill_level_required">Skill Level Required:</label>
+      <input type="text" id="skill_level_required" name="skill_level_required" required>
+
+      <label for="experience_required">Experience Required:</label>
+      <input type="number" id="experience_required" name="experience_required" required>
+
+      <label for="work_preference">Work Preference:</label>
+      <select id="work_preference" name="work_preference" required>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Contract">Contract</option>
+        <option value="Temporary">Temporary</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const form = document.getElementById('job-form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        fetch('/jobs', {
+          method: 'POST',
+          body: formData
+        }).then((response) => {
+          if (response.ok) {
+            alert('Job created successfully');
+            form.reset();
+          } else {
+            alert('Error creating job');
+          }
+        }).catch((error) => {
+          console.error(error);
+          alert('Error creating job');
+        });
+      });
+    </script>
+  </body>
+</html>
