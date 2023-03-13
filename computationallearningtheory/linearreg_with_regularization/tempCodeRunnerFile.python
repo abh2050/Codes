@@ -1,0 +1,26 @@
+import tarfile
+import zipfile
+import os
+
+# Define the files to be compressed
+file1 = "regression_with_regularization.py"
+file2 = "regression_without_regularization.py"
+file3 = "README.MD"
+file4 = 'requirement.txt'
+file5 = 'writeup.docx'
+
+# Define the name of the compressed file
+tar_file_name = "regression.tar.gz"
+zip_file_name = "regression.zip"
+
+# Compress the files into a tarball
+with tarfile.open(tar_file_name, "w:gz") as tar:
+    for file in [file1, file2, file3, file4, file5]:
+        tar.add(file)
+
+# Compress the files into a zip file
+with zipfile.ZipFile('regression.zip', "w") as zip:
+    for file in [file1, file2, file3, file4, file5]:
+        zip.write(file)
+
+
