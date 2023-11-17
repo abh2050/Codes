@@ -1,4 +1,4 @@
-
+![Healthcare Professional-Job Matching Project](https://miro.medium.com/v2/resize:fit:626/1*Jog6mtQAGB8p8_ieITAhXw.jpeg)
 # Healthcare Professional-Job Matching Project
 
 This repository contains a Python project for matching healthcare professionals to job opportunities. It utilizes Pandas for data handling, scikit-learn for machine learning tasks, and includes steps for data preprocessing, feature engineering, and recommendation generation.
