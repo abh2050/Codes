@@ -1,4 +1,4 @@
-![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpfkdloHSYaGfIKeaFH828my3ZdYM3UeqbWD-baWILQ&s)
+![image](https://cdn.analyticsvidhya.com/wp-content/uploads/2021/05/42365Regularization.png)
 ### Regression using Regularization 
 
 This code uses scikit-learn's pipeline, StandardScaler, PolynomialFeatures, Ridge, KFold, GridSearchCV, mean_squared_error, and matplotlib.pyplot libraries to perform a Ridge regression on a dataset.
