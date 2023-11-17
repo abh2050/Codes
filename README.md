@@ -17,9 +17,6 @@ A project dedicated to the initial phases of data analysis, exploring datasets t
 ## LangChain
 This project focuses on implementing and experimenting with LangChain, a novel approach or tool in the field of computational linguistics or natural language processing.
 
-## ML (Machine Learning)
-Contains various machine learning models and experiments. Showcases skills in ML algorithms, training models, and applying them to real-world datasets.
-
 ## Parameter Dependency in Machine Learning
 Explores the impact of parameter tuning on machine learning models. Demonstrates how different parameters influence the performance and accuracy of algorithms.
 
