@@ -1,4 +1,4 @@
-
+![image](https://searchengineland.com/wp-content/seloads/2022/11/Planning-Predictor-framework-800x444.png.webp)
 # SERP Rank Prediction Model
 
 This project includes a machine learning model to predict the rank of keywords in Search Engine Results Pages (SERPs). The Jupyter notebook `main.ipynb` contains the code for the entire process from data preprocessing to model evaluation.
