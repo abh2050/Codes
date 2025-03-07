@@ -1,83 +1,56 @@
 ```python
 '''
-# Maximum Subsequence Sum with Non-Adjacent Differences Constraint
-# Difficulty: Hard
+# Check for Duplicates in a Sorted Array
+# Difficulty: Easy
 
 # Problem Description:
-# Given an array of integers `nums`, find the maximum subsequence sum such that no two adjacent elements in the original array are both part of the subsequence. 
-# In other words, if you select nums[i] for the subsequence, you cannot select nums[i-1] or nums[i+1].
+# Given a sorted array of integers `nums`, return `True` if any value appears at least twice in the array, and return `False` if every element is distinct.
 
 # Examples:
 # Example 1:
-# Input: nums = [2, 7, 9, 3, 1]
-# Output: 12
-# Explanation: Picking [7, 1] gives a sum of 8.
-#              Picking [2, 9, 1] gives a sum of 12. 
-#              Picking [2, 7] gives a sum of 9.
-#              Picking [2, 9] gives a sum of 11.
-#              12 is the maximum sum we can get.
+# Input: nums = [1,2,3,4,5]
+# Output: False
+# Explanation: No value appears more than once.
 
 # Example 2:
-# Input: nums = [1, 2, 3, 1]
-# Output: 4
-# Explanation: Picking [1, 3] gives a sum of 4.
-
-# Example 3:
-# Input: nums = [1]
-# Output: 1
-# Explanation: Only one element, so we pick it.
+# Input: nums = [1,1,2,3,4]
+# Output: True
+# Explanation: The value 1 appears twice.
 
 
 # Constraints:
 # 1 <= nums.length <= 10^5
-# -10^4 <= nums[i] <= 10^4
+# -10^9 <= nums[i] <= 10^9
 '''
 
 class Solution:
-    def maxSubsequenceSum(self, nums: list[int]) -> int:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         """
-        Calculates the maximum subsequence sum with non-adjacent differences constraint.
+        Checks if a sorted array contains duplicate values.
 
         Args:
-            nums: The input array of integers.
+            nums: A sorted list of integers.
 
         Returns:
-            The maximum subsequence sum.
+            True if there are duplicate values, False otherwise.
         """
-        n = len(nums)
-        if n == 0:
-            return 0
-        if n == 1:
-            return nums[0]
-
-        # dp[i] stores the maximum sum ending at index i
-        dp = [0] * n
-        dp[0] = nums[0]
-        dp[1] = max(nums[0], nums[1])  # Either include nums[1] or stick with nums[0]
-
-        for i in range(2, n):
-            # Two options:
-            # 1. Include nums[i] - in this case, maximum sum is dp[i-2] + nums[i] (since we can't include nums[i-1])
-            # 2. Exclude nums[i] - in this case, maximum sum is dp[i-1] (the max sum so far)
-            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])  # Handle negative numbers properly
-
-        return dp[n - 1]
+        # Since the array is sorted, we can just check if adjacent elements are equal.
+        for i in range(len(nums) - 1):
+            if nums[i] == nums[i+1]:
+                return True
+        return False
 
 
+# Time Complexity: O(N), where N is the length of the input array. We iterate through the array once.
+# Space Complexity: O(1), we use constant extra space.
 
-# Test Cases
+
+# Test cases
 solution = Solution()
 
-print(solution.maxSubsequenceSum([2, 7, 9, 3, 1]))  # Output: 12
-print(solution.maxSubsequenceSum([1, 2, 3, 1]))  # Output: 4
-print(solution.maxSubsequenceSum([1]))  # Output: 1
-print(solution.maxSubsequenceSum([-2, 1, 3, -4, 5])) # Output: 8 ([1, 5])
-print(solution.maxSubsequenceSum([-2, -1, -3, -4, -5])) # Output: -1
-print(solution.maxSubsequenceSum([])) # Output: 0
-
-
-"""
-Time Complexity: O(n) - We iterate through the nums array once.
-Space Complexity: O(n) - We use a dp array of size n. (Can be optimized to O(1) by using just two variables to store the previous two dp values)
-"""
+print(solution.containsDuplicate([1, 2, 3, 4, 5]))  # Output: False
+print(solution.containsDuplicate([1, 1, 2, 3, 4]))  # Output: True
+print(solution.containsDuplicate([-1, 0, 0, 1, 2]))  # Output: True
+print(solution.containsDuplicate([]))  # Output: False (empty array has no duplicates)
+print(solution.containsDuplicate([1])) # Output: False (single element array has no duplicates)
 ```
