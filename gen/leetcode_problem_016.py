@@ -1,75 +1,71 @@
 ```python
 '''
-# Alternating Sum
-
+# Check for Even Digits
 # Difficulty: Easy
 
 # Problem Description:
-# Given a non-empty list of integers nums, return the alternating sum. 
-# The alternating sum is calculated by subtracting each odd-indexed element 
-# from the sum of even-indexed elements.  Indexing starts at 0.
+# Given a non-negative integer num, return True if num contains only even digits, and False otherwise.
+# Note: 0 is considered an even digit.
 
 # Examples:
 # Example 1:
-# Input: nums = [1, 2, 3, 4, 5]
-# Output: 3
-# Explanation: (1 + 3 + 5) - (2 + 4) = 9 - 6 = 3
+# Input: num = 2468
+# Output: True
+# Explanation: All digits (2, 4, 6, 8) are even.
 
 # Example 2:
-# Input: nums = [10, 20, 30]
-# Output: -10
-# Explanation: (10 + 30) - (20) = 40 - 20 = 20
+# Input: num = 3224
+# Output: False
+# Explanation: The digit 3 is odd.
+
+# Example 3:
+# Input: num = 0
+# Output: True
+# Explanation: 0 is considered an even digit.
+
 
 # Constraints:
-# 1 <= len(nums) <= 100
-# 0 <= nums[i] <= 1000
+# 0 <= num <= 10^9
 '''
 
 class Solution:
-    def alternatingSum(self, nums: list[int]) -> int:
+    def hasEvenDigitsOnly(self, num: int) -> bool:
         """
-        Calculates the alternating sum of a list of integers.
+        Checks if a number contains only even digits.
 
         Args:
-            nums: A list of integers.
+            num: The non-negative integer to check.
 
         Returns:
-            The alternating sum.
+            True if the number contains only even digits, False otherwise.
         """
-        even_sum = 0
-        odd_sum = 0
-        for i, num in enumerate(nums):
-            if i % 2 == 0:
-                even_sum += num
-            else:
-                odd_sum += num
-        return even_sum - odd_sum
 
-        # Alternative one-liner using list comprehensions and sum()
-        # return sum(nums[::2]) - sum(nums[1::2])
+        # Convert the number to a string to easily iterate through its digits
+        num_str = str(num)
+
+        # Iterate through each digit in the string
+        for digit in num_str:
+            # Convert the digit back to an integer
+            digit_int = int(digit)
+
+            # Check if the digit is odd
+            if digit_int % 2 != 0:
+                return False  # If an odd digit is found, return False immediately
+
+        # If the loop completes without finding any odd digits, return True
+        return True
 
 
-# Time Complexity: O(n), where n is the length of the input list nums. We iterate through the list once.
-# Space Complexity: O(1), as we only use a few variables to store sums, independent of the input size.
+# Time Complexity: O(log(n)), where n is the input number. The number of digits in a number is proportional to log(n).
+# Space Complexity: O(log(n)), as we convert the number to a string, the space used is proportional to the number of digits.
 
 
-# Test Cases
+# Test cases
 solution = Solution()
-
-# Test Case 1
-nums1 = [1, 2, 3, 4, 5]
-print(f"Test Case 1: Input: {nums1}, Output: {solution.alternatingSum(nums1)}, Expected: 3")  # Output: 3
-
-# Test Case 2
-nums2 = [10, 20, 30]
-print(f"Test Case 2: Input: {nums2}, Output: {solution.alternatingSum(nums2)}, Expected: 20") # Output: 20
-
-
-# Test Case 3 (Edge case - single element)
-nums3 = [7]
-print(f"Test Case 3: Input: {nums3}, Output: {solution.alternatingSum(nums3)}, Expected: 7")  # Output: 7
-
-# Test Case 4 (Edge case - empty list.  Though constraints say non-empty, good to test)
-nums4 = []
-print(f"Test Case 4: Input: {nums4}, Output: {solution.alternatingSum(nums4)}, Expected: 0")  # Output: 0
+print(solution.hasEvenDigitsOnly(2468))  # Output: True
+print(solution.hasEvenDigitsOnly(3224))  # Output: False
+print(solution.hasEvenDigitsOnly(0))  # Output: True
+print(solution.hasEvenDigitsOnly(1024))  # Output: False
+print(solution.hasEvenDigitsOnly(88888)) # Output: True
+print(solution.hasEvenDigitsOnly(24680)) # Output: True
 ```
