@@ -1,112 +1,75 @@
 ```python
 '''
-# Longest Substring with Unique Characters and at Most K Repeating Characters
-
-# Difficulty: Medium
+# Check for Alternating Parity
+# Difficulty: Easy
 
 # Problem Description:
-# Given a string s, find the length of the longest substring that contains only unique characters, 
-# with the exception that at most one character can repeat up to k times.
+# Given a list of integers, determine if the parity (even or odd) of the elements alternates.  Return True if the parity alternates, False otherwise.  An empty list or a list with a single element is considered to have alternating parity.
 
 # Examples:
 # Example 1:
-# Input: s = "aabacbebebe", k = 2
-# Output: 7
-# Explanation: The longest substring is "aabacbe" with length 7. 'b' repeats 2 times (<=k), while all other characters are unique.
+# Input: nums = [1, 2, 3, 4]
+# Output: True
+# Explanation: The parity alternates: odd, even, odd, even.
 
 # Example 2:
-# Input: s = "aabbc", k = 1
-# Output: 3
-# Explanation: The longest substring is "aab" or "bbc" with length 3.
+# Input: nums = [2, 2, 3, 4]
+# Output: False
+# Explanation: The parity does not alternate at index 1.
 
 # Example 3:
-# Input: s = "abcabcbb", k = 2
-# Output: 3
-# Explanation: "abc" is the longest substring with all unique characters.
+# Input: nums = [1]
+# Output: True
+# Explanation: A single element list is considered alternating.
+
+# Example 4:
+# Input: nums = []
+# Output: True
+# Explanation: An empty list is considered alternating.
+
 
 # Constraints:
-# 1 <= s.length <= 10^4
-# 0 <= k <= s.length
-# s consists of lowercase English letters.
+# 0 <= len(nums) <= 1000
+# 0 <= nums[i] <= 1000
 '''
 
-from collections import defaultdict
-
 class Solution:
-    def longestSubstringWithKRepeating(self, s: str, k: int) -> int:
+    def alternatingParity(self, nums: list[int]) -> bool:
         """
-        Finds the length of the longest substring with unique characters and at most k repeating characters.
+        Checks if the parity of elements in a list alternates.
 
         Args:
-            s: The input string.
-            k: The maximum allowed repetitions for a single character.
+            nums: A list of integers.
 
         Returns:
-            The length of the longest substring.
+            True if the parity alternates, False otherwise.
         """
-        n = len(s)
-        max_len = 0
-        for i in range(n):
-            char_counts = defaultdict(int)
-            repeating_char = None
-            repeating_count = 0
-            for j in range(i, n):
-                char_counts[s[j]] += 1
-                if char_counts[s[j]] > 1 and (repeating_char is None or s[j] == repeating_char):  # Track repeating char
-                    repeating_char = s[j]
-                    repeating_count = char_counts[s[j]]
-                elif char_counts[s[j]] > 1 and s[j] != repeating_char: # More than one character repeating, break
-                    break
 
-                if repeating_char is None or repeating_count <= k:  # Valid substring condition
-                    max_len = max(max_len, j - i + 1)
-                else: # Repeating char exceeds limit
-                    break
+        n = len(nums)
+        if n <= 1:  # Empty or single-element list is alternating
+            return True
+
+        for i in range(n - 1):
+            if (nums[i] % 2) == (nums[i+1] % 2):  # Check if adjacent elements have the same parity
+                return False
+
+        return True  # Parity alternates throughout the list
 
 
-        return max_len
+# Time Complexity: O(N), where N is the length of the input list. We iterate through the list at most once.
+# Space Complexity: O(1), as we use only constant extra space.
 
-# Time Complexity: O(n^2),  Nested loops to iterate through all possible substrings.
-# Space Complexity: O(1), Constant extra space for the character count dictionary (limited to 26 lowercase letters)
 
 
 # Test Cases
 solution = Solution()
 
-# Example 1
-s1 = "aabacbebebe"
-k1 = 2
-print(f"Input: s = '{s1}', k = {k1}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s1, k1)}\n")  # Output: 7
+print(solution.alternatingParity([1, 2, 3, 4]))  # Output: True
+print(solution.alternatingParity([2, 2, 3, 4]))  # Output: False
+print(solution.alternatingParity([1]))  # Output: True
+print(solution.alternatingParity([]))  # Output: True
+print(solution.alternatingParity([1, 3, 5]))  # Output: False
+print(solution.alternatingParity([2, 4, 6]))  # Output: False
+print(solution.alternatingParity([1, 2, 3, 4, 5, 5]))  # Output: False
 
-# Example 2
-s2 = "aabbc"
-k2 = 1
-print(f"Input: s = '{s2}', k = {k2}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s2, k2)}\n")  # Output: 3
-
-# Example 3
-s3 = "abcabcbb"
-k3 = 2
-print(f"Input: s = '{s3}', k = {k3}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s3, k3)}\n")  # Output: 3
-
-
-# Example 4 - Added for clarity
-s4 = "aaabbbccc"
-k4 = 1
-print(f"Input: s = '{s4}', k = {k4}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s4, k4)}\n") # Output 2
-
-# Example 5 - Added for clarity
-s5 = ""
-k5 = 0
-print(f"Input: s = '{s5}', k = {k5}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s5, k5)}\n") # Output 0
-
-# Example 6 - Added for clarity
-s6 = "a"
-k6 = 1
-print(f"Input: s = '{s6}', k = {k6}")
-print(f"Output: {solution.longestSubstringWithKRepeating(s6, k6)}\n") # Output 1
 ```
