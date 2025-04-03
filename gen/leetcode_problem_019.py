@@ -1,68 +1,79 @@
 ```python
 '''
-# Count Occurrences of a Character
-
-# Difficulty: Easy
+# Maximum Sum of Non-Adjacent Elements in a Circular Array
+# Difficulty: Medium
 
 # Problem Description:
-# Given a string `s` and a character `c`, return the number of times `c` appears in `s`.
-# The comparison should be case-sensitive.
+# Given a circular array of integers nums (where the last element is considered adjacent to the first element), 
+# find the maximum sum of a subset of non-adjacent elements.
 
 # Examples:
 # Example 1:
-# Input: s = "programming", c = "r"
-# Output: 2
-# Explanation: The character 'r' appears twice in the string "programming".
+# Input: nums = [2, 7, 9, 3, 1]
+# Output: 11
+# Explanation: Select elements at indices 0, 2, and 4 (2 + 9 + 1 = 12). Alternatively, you can select 7 + 3 = 10 or 7+1=8 or 9+1=10. 11 is the maximum possible sum of non-adjacent elements.
 
 # Example 2:
-# Input: s = "AbCdEfGh", c = "a"
-# Output: 0
-# Explanation: The character 'a' does not appear in the string "AbCdEfGh". Because the check is case sensitive 'a' is not the same as 'A'
-
-# Example 3:
-# Input: s = "banana", c = "a"
-# Output: 3
-# Explanation: The character 'a' appears thrice in the string "banana"
+# Input: nums = [1, 2, 3, 1]
+# Output: 4
+# Explanation: Select elements at indices 0 and 2 (1 + 3 = 4).
 
 # Constraints:
-# 1 <= len(s) <= 10^5
-# c is a single character string.
+# 1 <= nums.length <= 10^5
+# 1 <= nums[i] <= 10^4
 '''
 
 class Solution:
-    def countOccurrences(self, s: str, c: str) -> int:
+    def rob_circular(self, nums: list[int]) -> int:
         """
-        Counts the number of times a character appears in a string.
+        Calculates the maximum sum of non-adjacent elements in a circular array.
 
         Args:
-            s: The input string.
-            c: The character to count.
+            nums: The input circular array of integers.
 
         Returns:
-            The number of times the character appears in the string.
+            The maximum sum of non-adjacent elements.
         """
-        count = 0
-        for char in s:
-            if char == c:
-                count += 1
-        return count
+        n = len(nums)
+        if n == 0:
+            return 0
+        if n == 1:
+            return nums[0]
+        if n == 2:
+            return max(nums)
 
-        # Alternative one-liner solution using count():
-        # return s.count(c)
+        # Consider two cases:
+        # 1. Include the first element: Then we can't include the last element.
+        # 2. Exclude the first element: Then we can include the last element.
+
+        # Case 1: Exclude last element
+        dp1 = [0] * (n - 1)
+        dp1[0] = nums[0]
+        dp1[1] = max(nums[0], nums[1])
+        for i in range(2, n - 1):
+            dp1[i] = max(dp1[i - 1], dp1[i - 2] + nums[i])
+
+        # Case 2: Exclude first element
+        dp2 = [0] * n
+        dp2[1] = nums[1]
+        for i in range(2, n):
+            dp2[i] = max(dp2[i - 1], dp2[i - 2] + nums[i])
+
+        return max(dp1[n - 2], dp2[n - 1])
 
 
-# Time Complexity: O(n), where n is the length of the string s, as we iterate through the string once.
-# Space Complexity: O(1), as we only use constant extra space.
-
+# Time Complexity: O(n) - We iterate through the array twice in the two DP calculations.
+# Space Complexity: O(n) - We use two DP arrays of size n.
 
 
 # Test cases
-solution = Solution()
-print(solution.countOccurrences("programming", "r"))  # Output: 2
-print(solution.countOccurrences("AbCdEfGh", "a"))  # Output: 0
-print(solution.countOccurrences("banana", "a"))  # Output: 3
-print(solution.countOccurrences("", "x")) # Output: 0
-print(solution.countOccurrences("xxxxx", "x")) # Output: 5
+sol = Solution()
+print(sol.rob_circular([2, 7, 9, 3, 1]))  # Output: 12
+print(sol.rob_circular([1, 2, 3, 1]))  # Output: 4
+print(sol.rob_circular([1, 2, 3]))  # Output: 3
+print(sol.rob_circular([1]))       # Output: 1
+print(sol.rob_circular([1, 5]))     # Output: 5
+print(sol.rob_circular([2,1,1,2])) # Output: 3
 
 
 ```
