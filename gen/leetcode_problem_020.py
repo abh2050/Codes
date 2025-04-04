@@ -1,58 +1,76 @@
 ```python
 '''
-# Sum of Even Digits
+# Check for Balanced Parentheses in a Substring
 # Difficulty: Easy
 
 # Problem Description:
-# Given a non-negative integer num, return the sum of its even digits.
+# Given a string containing only parentheses '(', ')', '{', '}', '[' and ']', 
+# determine if a substring defined by start and end indices (inclusive) has balanced parentheses.
+# Return True if the substring has balanced parentheses, False otherwise.
+
 
 # Examples:
 # Example 1:
-# Input: num = 1234
-# Output: 6
-# Explanation: The even digits are 2 and 4, their sum is 6.
+# Input: s = "{([])}", start = 0, end = 5
+# Output: True
+# Explanation: The substring from index 0 to 5 is "{([])}", which is balanced.
 
 # Example 2:
-# Input: num = 579
-# Output: 0
-# Explanation: There are no even digits in the input number.
+# Input: s = "[{]}", start = 0, end = 3
+# Output: False
+# Explanation: The substring from index 0 to 3 is "[{]}", which is not balanced.
 
+# Example 3:
+# Input: s = "()", start = 0, end = 1
+# Output: True
 
 # Constraints:
-# 0 <= num <= 10^9
+# 1 <= s.length <= 10^4
+# 0 <= start <= end < s.length
+# s[i] is one of '(', ')', '{', '}', '[' and ']'.
 '''
 
 class Solution:
-    def sumEvenDigits(self, num: int) -> int:
+    def isBalanced(self, s: str, start: int, end: int) -> bool:
         """
-        Calculates the sum of even digits in a given integer.
+        Checks if a substring has balanced parentheses.
 
         Args:
-            num: The input non-negative integer.
+            s: The input string.
+            start: The start index of the substring (inclusive).
+            end: The end index of the substring (inclusive).
 
         Returns:
-            The sum of even digits.
+            True if the substring is balanced, False otherwise.
         """
-        sum_of_evens = 0
-        for digit in str(num):  # Convert to string to iterate through digits
-            digit = int(digit)
-            if digit % 2 == 0:
-                sum_of_evens += digit
-        return sum_of_evens
+        stack = []
+        matching = {')': '(', '}': '{', ']': '['}
 
-# Time Complexity: O(log(n)), where n is the input number. We iterate through the digits, 
-# and the number of digits is proportional to the logarithm of the number.
-# Space Complexity: O(1) - We use constant extra space.
+        for i in range(start, end + 1):
+            char = s[i]
+            if char in matching:  # Closing parenthesis
+                if not stack or stack.pop() != matching[char]:
+                    return False
+            elif char in matching.values():  # Opening parenthesis
+                stack.append(char)
+        
+        return not stack # Return True if the stack is empty (all parentheses matched)
+
 
 
 # Test Cases
 solution = Solution()
-print(solution.sumEvenDigits(1234))  # Output: 6
-print(solution.sumEvenDigits(579))   # Output: 0
-print(solution.sumEvenDigits(2468))  # Output: 20
-print(solution.sumEvenDigits(13579)) # Output: 0
-print(solution.sumEvenDigits(0))     # Output: 0
-print(solution.sumEvenDigits(1000000002)) # Output: 2
+print(solution.isBalanced("{([])}", 0, 5))  # Output: True
+print(solution.isBalanced("[{]}", 0, 3))  # Output: False
+print(solution.isBalanced("()", 0, 1)) # Output: True
+print(solution.isBalanced("([)]", 0, 3)) # Output: False
+print(solution.isBalanced("{[}]", 0, 3)) # Output: False
+print(solution.isBalanced("([])", 0,2)) # Output: False
+print(solution.isBalanced("([]{})", 1, 4))  # Output: True
 
 
+'''
+Time Complexity: O(n), where n is the length of the substring (end - start + 1). We iterate through the substring once.
+Space Complexity: O(n) in the worst case, where the substring contains only opening parentheses and the stack stores all of them. 
+'''
 ```
