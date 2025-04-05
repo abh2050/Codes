@@ -1,77 +1,108 @@
 ```python
 '''
-# Maximum Submatrix Sum with Swaps
-# Difficulty: Hard
+# Maximum Sum of Non-Adjacent Elements in a Circular Array
+# Difficulty: Medium
 
 # Problem Description:
-# You are given a 2D integer matrix `matrix` of size m x n. You are allowed to perform 
-# at most `k` swaps between any two elements within the matrix. Find the maximum possible 
-# sum of a submatrix after performing the swaps.  A submatrix is defined as a contiguous 
-# block of cells within the matrix. You can choose any submatrix after performing the swaps.
-
+# Given a circular integer array nums (i.e., the last element is also adjacent to the first element), 
+# find the maximum sum of a non-adjacent subsequence. A non-adjacent subsequence is a subsequence 
+# where no two elements are adjacent in the original circular array.
 
 # Examples:
 # Example 1:
-# Input: matrix = [[1,2,3],[4,5,6],[7,8,9]], k = 2
-# Output: 45
-# Explanation: Swap matrix[0][0] with matrix[2][2]. The maximum submatrix sum becomes 45 (the entire matrix).
+# Input: nums = [2, 1, 4, 9]
+# Output: 11
+# Explanation: The maximum sum is obtained by selecting elements at indices 0 and 3 (2 + 9 = 11).
 
 # Example 2:
-# Input: matrix = [[1,2,-1],[-3,4,5],[6,-7,8]], k = 1
-# Output: 23 
-# Explanation: Swap matrix[0][2] with matrix[2][0]. The maximum submatrix becomes [[1,2,6],[-3,4,5],[ -1,-7,8]].
-#  A possible submatrix with sum 23 is formed by rows 0 and 1, and columns 1 and 2.
+# Input: nums = [1, 2, 3, 1]
+# Output: 4
+# Explanation: The maximum sum is obtained by selecting elements at indices 0 and 2 (1 + 3 = 4).
+
 
 # Constraints:
-# 1 <= m, n <= 100
-# -100 <= matrix[i][j] <= 100
-# 0 <= k <= m * n
+# 1 <= nums.length <= 2 * 10^4
+# -10^4 <= nums[i] <= 10^4
 '''
 
 class Solution:
-    def maxSubmatrixSum(self, matrix: list[list[int]], k: int) -> int:
-        # Step 1: Flatten the matrix and sort in descending order
-        m, n = len(matrix), len(matrix[0])
-        flattened_matrix = sorted([num for row in matrix for num in row], reverse=True)
+    def rob_circular(self, nums: list[int]) -> int:
+        """
+        Calculates the maximum sum of non-adjacent elements in a circular array.
 
-        # Step 2: Perform swaps greedily
-        for _ in range(min(k, m * n)):  # Limit swaps to the number of elements
-            min_val = float('inf')
-            min_idx = -1
-            for r in range(m):
-                for c in range(n):
-                    if matrix[r][c] < min_val:
-                        min_val = matrix[r][c]
-                        min_idx = (r, c)
-            if flattened_matrix[0] > min_val:  # Only swap if it increases the max value
-                r, c = min_idx
-                matrix[r][c] = flattened_matrix.pop(0) # Replace the smallest with the largest available
-            else:
-                break  # Swapping won't increase the maximum anymore
+        Args:
+            nums: The input circular integer array.
 
-        # Step 3: Calculate maximum submatrix sum (Kadane's algorithm variation)
-        max_sum = float('-inf')
-        for left in range(n):
-            current_sum = [0] * m
-            for right in range(left, n):
-                for i in range(m):
-                    current_sum[i] += matrix[i][right]
+        Returns:
+            The maximum sum of a non-adjacent subsequence.
+        """
+        n = len(nums)
+        if n == 0:
+            return 0
+        if n == 1:
+            return nums[0]
+        if n == 2:
+            return max(nums)
 
-                current_max = 0
-                for num in current_sum:
-                    current_max = max(num, current_max + num)
-                    max_sum = max(max_sum, current_max)
+        # Consider two scenarios:
+        # 1. Include the first element, exclude the last
+        # 2. Exclude the first element, include the last
 
-        return max_sum
+        # Helper function to calculate max sum for a linear array (House Robber I logic)
+        def rob_linear(arr):
+            n = len(arr)
+            if n == 0:
+                return 0
+            if n == 1:
+                return arr[0]
 
-    # Time Complexity: O(m*n*log(m*n) + m*n^2) dominated by the sorting and submatrix calculation.
-    # Space Complexity: O(m*n) for flattening the matrix.
+            dp = [0] * n
+            dp[0] = arr[0]
+            dp[1] = max(arr[0], arr[1])
+
+            for i in range(2, n):
+                dp[i] = max(dp[i - 1], dp[i - 2] + arr[i])
+
+            return dp[n - 1]
+
+        # Scenario 1: Include first, exclude last
+        max1 = rob_linear(nums[:-1])
+
+        # Scenario 2: Exclude first, include last
+        max2 = rob_linear(nums[1:])
+
+        return max(max1, max2)
+
+
+
+# Time Complexity: O(n), where n is the length of the input array. We iterate through the array twice in the rob_linear function.
+# Space Complexity: O(n) for the dp array in the rob_linear function. This can be optimized to O(1) by using only two variables to track the previous two maximum sums.
+
 
 # Test Cases
-sol = Solution()
-print(sol.maxSubmatrixSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 2))  # Output: 45
-print(sol.maxSubmatrixSum([[1, 2, -1], [-3, 4, 5], [6, -7, 8]], 1))  # Output: 23
-print(sol.maxSubmatrixSum([[-1]], 0)) # Output: -1
-print(sol.maxSubmatrixSum([[1,2],[3,4]], 4)) # Output: 10
+solution = Solution()
 
+# Test Case 1
+nums1 = [2, 1, 4, 9]
+print(f"Test Case 1: {solution.rob_circular(nums1)}")  # Expected Output: 11
+
+# Test Case 2
+nums2 = [1, 2, 3, 1]
+print(f"Test Case 2: {solution.rob_circular(nums2)}")  # Expected Output: 4
+
+# Test Case 3 - Empty Array
+nums3 = []
+print(f"Test Case 3: {solution.rob_circular(nums3)}") # Expected Output: 0
+
+# Test Case 4 - Single Element Array
+nums4 = [5]
+print(f"Test Case 4: {solution.rob_circular(nums4)}") # Expected Output: 5
+
+# Test Case 5 - Two Element Array
+nums5 = [1,2]
+print(f"Test Case 5: {solution.rob_circular(nums5)}") # Expected Output: 2
+
+# Test Case 6
+nums6 = [1, 3, 1, 3, 100]
+print(f"Test Case 6: {solution.rob_circular(nums6)}")  # Expected Output: 103
 ```
