@@ -1,64 +1,62 @@
 ```python
 '''
-# Check for Even Digits
+# Check if Number is Within Range
 # Difficulty: Easy
 
 # Problem Description:
-# Given an integer num, return True if all the digits in the number are even, otherwise return False.
+# Given an integer `num` and a closed interval represented by two integers `lower` and `upper` (inclusive), 
+# return `True` if `num` falls within the interval, and `False` otherwise.
 
 # Examples:
 # Example 1:
-# Input: num = 2468
+# Input: num = 5, lower = 1, upper = 10
 # Output: True
-# Explanation: All digits (2, 4, 6, 8) are even.
+# Explanation: 5 is within the interval [1, 10].
 
 # Example 2:
-# Input: num = 1234
+# Input: num = 15, lower = 1, upper = 10
 # Output: False
-# Explanation: Digit 1 and 3 are odd, so the function returns False.
+# Explanation: 15 is outside the interval [1, 10].
 
 # Example 3:
-# Input: num = 0
+# Input: num = 1, lower = 1, upper = 1
 # Output: True
-# Explanation: 0 is considered an even digit.
+# Explanation: 1 is within the interval [1, 1].
+
 
 # Constraints:
-# 0 <= num <= 10^6
+# -100 <= num <= 100
+# -100 <= lower <= 100
+# -100 <= upper <= 100
+# lower <= upper 
 '''
 
 class Solution:
-    def areAllDigitsEven(self, num: int) -> bool:
+    def isWithinRange(self, num: int, lower: int, upper: int) -> bool:
         """
-        Checks if all digits in a number are even.
+        Checks if a number is within a given range (inclusive).
 
         Args:
-            num: The input integer.
+            num: The integer to check.
+            lower: The lower bound of the interval.
+            upper: The upper bound of the interval.
 
         Returns:
-            True if all digits are even, False otherwise.
+            True if num is within the interval [lower, upper], False otherwise.
         """
-
-        # Convert the integer to a string to easily iterate through digits
-        num_str = str(num)
-
-        for digit in num_str:
-            # Convert the digit back to an integer and check if it's even
-            if int(digit) % 2 != 0:
-                return False  # If any digit is odd, return False immediately
-
-        return True  # If all digits are even, return True
+        return lower <= num <= upper  # Direct comparison for efficiency
 
 
-# Time Complexity: O(log(n)), where n is the input number. The number of digits is proportional to the logarithm of the number.
-# Space Complexity: O(log(n)), as we convert the number to a string, which takes space proportional to the number of digits.
+# Time Complexity: O(1) - Constant time operation.
+# Space Complexity: O(1) - No extra space used.
+
 
 # Test Cases
 solution = Solution()
+print(solution.isWithinRange(5, 1, 10))  # Output: True
+print(solution.isWithinRange(15, 1, 10)) # Output: False
+print(solution.isWithinRange(1, 1, 1))  # Output: True
+print(solution.isWithinRange(-5, -10, 0)) # Output: True
+print(solution.isWithinRange(100, 0, 99)) # Output: False
 
-print(solution.areAllDigitsEven(2468))  # Output: True
-print(solution.areAllDigitsEven(1234))  # Output: False
-print(solution.areAllDigitsEven(0))  # Output: True
-print(solution.areAllDigitsEven(24680)) # Output: True
-print(solution.areAllDigitsEven(1024)) # Output: False
-print(solution.areAllDigitsEven(2222)) # Output: True
 ```
