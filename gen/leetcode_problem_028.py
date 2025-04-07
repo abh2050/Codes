@@ -1,77 +1,88 @@
 ```python
 '''
-# Maximum Sum of Non-Adjacent Elements in a Circular Array
-# Difficulty: Medium
+# Maximum Subarray Sum with K Distinct Prime Factors
+# Difficulty: Hard
 
 # Problem Description:
-# Given a circular array of integers nums (where the last element is considered adjacent to the first element), 
-# find the maximum sum of a non-adjacent subset of elements.  A subset is "non-adjacent" if no two elements in the subset are adjacent in the circular array.
+# Given an array of positive integers 'nums' and an integer 'k', find the maximum possible sum of a subarray where each element in the subarray has exactly 'k' distinct prime factors. If no such subarray exists, return -1.
 
 # Examples:
 # Example 1:
-# Input: nums = [2, 1, 4, 9]
-# Output: 11
-# Explanation: We can select elements at indices 0 and 3 (2 + 9 = 11).  Or we can select elements at indices 1 and 2 (1 + 4 = 5). 11 is the maximum sum.
+# Input: nums = [10, 20, 30, 40, 50], k = 2
+# Output: 90 
+# Explanation: [20, 30, 40] (20 = 2*2*5, 30 = 2*3*5, 40 = 2*2*2*5). Each number has 2 distinct prime factors, and the sum is 90.
 
 # Example 2:
-# Input: nums = [1, 2, 3, 1]
-# Output: 4
-# Explanation: We can select elements at indices 0 and 2 (1 + 3 = 4).
+# Input: nums = [7, 10, 12, 7, 9, 14], k = 2
+# Output: 24
+# Explanation: [10, 14]. 10 = 2*5, 14 = 2*7
+
+# Example 3:
+# Input: nums = [6, 8, 10], k = 3 
+# Output: -1
+# Explanation: No number has 3 distinct prime factors.
 
 # Constraints:
 # 1 <= nums.length <= 10^5
-# -10^4 <= nums[i] <= 10^4
+# 1 <= nums[i] <= 10^6
+# 1 <= k <= 5
 '''
 
 class Solution:
-    def rob_circular(self, nums: list[int]) -> int:
+    def maxSubarraySumKPrimes(self, nums, k):
         """
-        Calculates the maximum sum of non-adjacent elements in a circular array.
+        Finds the maximum sum of a subarray where each element has exactly k distinct prime factors.
 
         Args:
-            nums: The input circular array of integers.
+            nums: The input array of positive integers.
+            k: The required number of distinct prime factors.
 
         Returns:
-            The maximum sum of non-adjacent elements.
+            The maximum subarray sum, or -1 if no such subarray exists.
         """
-        n = len(nums)
-        if n == 0:
-            return 0
-        if n == 1:
-            return nums[0]
-        if n == 2:
-            return max(nums)
-
-        # Consider two cases:
-        # 1. Exclude the last element:  Standard house robber problem on nums[:-1]
-        # 2. Exclude the first element: Standard house robber problem on nums[1:]
-        # Return the maximum of these two cases.
-
-        def house_robber(arr):
-            """Helper function for standard house robber problem (linear array)."""
-            n = len(arr)
-            dp = [0] * n
-            dp[0] = arr[0]
+        def count_prime_factors(n):
+            count = 0
+            i = 2
+            while i * i <= n:
+                if n % i == 0:
+                    count += 1
+                    while n % i == 0:
+                        n //= i
+                i += 1
             if n > 1:
-                dp[1] = max(arr[0], arr[1])
-            for i in range(2, n):
-                dp[i] = max(dp[i-1], dp[i-2] + arr[i])  # Either skip current or include it (and skip previous)
-            return dp[-1]
+                count += 1
+            return count
 
-        return max(house_robber(nums[:-1]), house_robber(nums[1:]))
+        filtered_nums = [num for num in nums if count_prime_factors(num) == k]
+        if not filtered_nums:
+            return -1
 
-# Time Complexity: O(N), where N is the length of the array. We perform two linear scans using the house_robber helper.
-# Space Complexity: O(N) in the current implementation due to the dp array in house_robber. This could be optimized to O(1) by only storing the previous two dp values.
+        max_so_far = 0
+        current_max = 0
+        for num in filtered_nums:
+            current_max += num
+            if current_max < 0:
+                current_max = 0
+            max_so_far = max(max_so_far, current_max)
 
+        return max_so_far if max_so_far > 0 else -1
+
+    # Time Complexity: O(N * sqrt(M)), where N is the length of nums and M is the maximum value in nums.
+    # Space Complexity: O(N) in the worst case, where all numbers have k prime factors.
 
 
 # Test Cases
 solution = Solution()
-print(solution.rob_circular([2, 1, 4, 9]))  # Output: 11
-print(solution.rob_circular([1, 2, 3, 1]))  # Output: 4
-print(solution.rob_circular([1, 2, 3, 1, 5])) # Output: 8
-print(solution.rob_circular([1]))  # Output: 1
-print(solution.rob_circular([1, 2])) # Output: 2
-print(solution.rob_circular([])) # Output: 0
+
+print(solution.maxSubarraySumKPrimes([10, 20, 30, 40, 50], 2))  # Output: 90
+print(solution.maxSubarraySumKPrimes([7, 10, 12, 7, 9, 14], 2))  # Output: 24
+print(solution.maxSubarraySumKPrimes([6, 8, 10], 3))  # Output: -1
+print(solution.maxSubarraySumKPrimes([30, 60, 90, 120, 420], 3)) # Output: 750
+print(solution.maxSubarraySumKPrimes([1,2,3,4,5], 1)) # Output: 5
+print(solution.maxSubarraySumKPrimes([1,4,9,16,25],0)) # Output: -1
+
+
+
+
 
 ```
