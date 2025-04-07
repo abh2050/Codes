@@ -1,74 +1,61 @@
 ```python
 '''
-# Maximum Sum of Non-Adjacent Elements in a Circular Array
-# Difficulty: Medium
+# Check for Even Digits
+# Difficulty: Easy
 
 # Problem Description:
-# Given a circular integer array nums (i.e., the last element is also adjacent to the first element), 
-# find the maximum sum of a non-adjacent subset of elements.  No adjacent elements can be included 
-# in the subset.  The array can contain both positive and negative integers.
+# Given an integer array nums, return the number of integers in nums that have an even number of digits.
 
 # Examples:
 # Example 1:
-# Input: nums = [2, 4, 1, 3, 5]
-# Output: 10
-# Explanation: We can select elements at indices 0, 2, and 4 (2 + 1 + 5 = 8) or indices 1 and 3 (4 + 3 = 7). Or we can select elements at indices 1 and 4 (4 + 5 = 9). Selecting 2, 3, and 5 yields the maximum sum of 10.
+# Input: nums = [12,345,2,6,7896]
+# Output: 2
+# Explanation: 
+# 12 contains 2 digits (even number of digits). 
+# 345 contains 3 digits (odd number of digits). 
+# 2 contains 1 digit (odd number of digits). 
+# 6 contains 1 digit (odd number of digits). 
+# 7896 contains 4 digits (even number of digits). 
+# Therefore only 12 and 7896 contain an even number of digits.
 
 # Example 2:
-# Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-# Output: 6
-# Explanation: Selecting elements 4, 2, and 4 gives the maximum sum of 6 (4 + 2 + 4).
+# Input: nums = [555,901,482,1771]
+# Output: 1 
+# Explanation: 
+# Only 482 contains an even number of digits.
 
 # Constraints:
-# 1 <= nums.length <= 10^5
-# -10^4 <= nums[i] <= 10^4
+# 1 <= nums.length <= 500
+# 1 <= nums[i] <= 10^5
 '''
 
 class Solution:
-    def rob_circular(self, nums: list[int]) -> int:
+    def findNumbers(self, nums: list[int]) -> int:
         """
-        Calculates the maximum sum of non-adjacent elements in a circular array.
+        Counts the number of integers in the input list with an even number of digits.
 
         Args:
-            nums: The input circular integer array.
+            nums: A list of integers.
 
         Returns:
-            The maximum sum of non-adjacent elements.
+            The count of integers with an even number of digits.
         """
-        n = len(nums)
-        if n == 0: return 0
-        if n == 1: return nums[0]
-        if n == 2: return max(nums[0], nums[1])
+        count = 0
+        for num in nums:
+            if len(str(num)) % 2 == 0:  # Convert to string to easily find the number of digits
+                count += 1
+        return count
 
-        # Consider two scenarios:
-        # 1. Include the first element: then we can't include the last
-        # 2. Exclude the first element: then we can include the last
-
-        def house_robber(arr):  # Standard house robber logic (linear DP)
-            dp = [0] * len(arr)
-            dp[0] = arr[0]
-            dp[1] = max(arr[0], arr[1])
-            for i in range(2, len(arr)):
-                dp[i] = max(dp[i-1], dp[i-2] + arr[i])
-            return dp[-1]
-
-        include_first = house_robber(nums[:-1])   # Exclude the last element
-        exclude_first = house_robber(nums[1:]) # Exclude the first element
-
-        return max(include_first, exclude_first)
-
-# Time Complexity: O(n) - We iterate through the array twice in the house_robber function.
-# Space Complexity: O(n) - We use a DP array of size n in the house_robber function. Can be optimized to O(1) space.
-
+# Time Complexity: O(N*M) where N is the number of elements in nums and M is the maximum number of digits in any number. Converting a number to a string takes O(M) time. However, since the maximum value of nums[i] is constrained, M can be treated as constant making the complexity closer to O(N) in practice.
+# Space Complexity: O(1) as we are only using a few extra variables. Converting the integer to a string takes temporary space proportional to the number of digits, but it's released immediately after the check, so the overall space complexity remains constant.
 
 
 # Test Cases
 solution = Solution()
+print(solution.findNumbers([12, 345, 2, 6, 7896]))  # Output: 2
+print(solution.findNumbers([555, 901, 482, 1771]))  # Output: 1
+print(solution.findNumbers([1,2,3,4,5,6,7,8,9,10,11,10000])) # Output 2
+print(solution.findNumbers([])) # Output 0
 
-print(solution.rob_circular([2, 4, 1, 3, 5]))  # Output: 10
-print(solution.rob_circular([-2, 1, -3, 4, -1, 2, 1, -5, 4]))  # Output: 6
-print(solution.rob_circular([1,2,3,1])) # Output: 4
-print(solution.rob_circular([1])) # Output: 1
-print(solution.rob_circular([])) # Output: 0
 
 ```
