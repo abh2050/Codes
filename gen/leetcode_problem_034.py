@@ -1,84 +1,83 @@
 ```python
 '''
-# Maximum Subarray Sum with Non-Adjacent Jumps
-
-# Difficulty: Hard
+# Check for Even Digits
+# Difficulty: Easy
 
 # Problem Description:
-# You are given an array of integers `nums` representing values on a number line. You are initially positioned at index 0.
-# You can jump forward from your current position `i` to either `i + 1` or `i + 2`.
-# Find the maximum possible sum you can obtain by collecting the values at the indices you visit, with the additional constraint
-# that you cannot visit adjacent indices in the array (except for the starting indices 0 and 1 if you choose to visit both).
+# Given an integer array nums, return the number of elements in nums that have an even number of digits.
 
 # Examples:
 # Example 1:
-# Input: nums = [1, 2, 3, 1]
-# Output: 4
-# Explanation: You can collect 1 + 3 to get the maximum sum of 4.
+# Input: nums = [12,345,2,6,7896]
+# Output: 2
+# Explanation: 
+# 12 contains 2 digits (even number of digits). 
+# 345 contains 3 digits (odd number of digits). 
+# 2 contains 1 digit (odd number of digits). 
+# 6 contains 1 digit (odd number of digits). 
+# 7896 contains 4 digits (even number of digits). 
+# Therefore only 12 and 7896 contain an even number of digits.
 
 # Example 2:
-# Input: nums = [2, 7, 9, 3, 1]
-# Output: 12
-# Explanation: You can collect 2 + 9 + 1 to get the maximum sum of 12.
-
-# Example 3:
-# Input: nums = [1,2,3,4,5,6,7,8]
-# Output: 16 
-# Explanation: 1 + 3 + 5 + 7 = 16
+# Input: nums = [555,901,482,1771]
+# Output: 1 
+# Explanation: 
+# Only 482 contains an even number of digits.
 
 # Constraints:
-# 1 <= nums.length <= 10^5
-# -10^4 <= nums[i] <= 10^4
+# 1 <= nums.length <= 500
+# 1 <= nums[i] <= 10^5
 '''
 
 class Solution:
-    def maxNonAdjacentJumpSum(self, nums):
+    def findNumbers(self, nums: list[int]) -> int:
         """
-        Calculates the maximum non-adjacent jump sum.
+        Counts the number of elements in nums with an even number of digits.
 
         Args:
-            nums: The input array of integers.
+            nums: A list of integers.
 
         Returns:
-            The maximum possible sum.
+            The count of numbers with an even number of digits.
         """
-        n = len(nums)
-        if n == 0:
-            return 0
-        if n == 1:
-            return nums[0]
 
-        dp = [0] * n
-        dp[0] = nums[0]
-        if n > 1:
-            dp[1] = max(nums[0], nums[1])
+        count = 0
+        for num in nums:
+            # Convert the number to a string and check its length
+            if len(str(num)) % 2 == 0:  
+                count += 1
+        return count
 
-        for i in range(2, n):
-            # Case 1: Jump from i-1 and don't include i
-            # Case 2: Jump from i-1, jump to i (valid only for n=2 or n=3)
-            # Case 3: Jump from i-2 and include i
-            # Case 4: Jump from i-2 and don't include i
+# Time Complexity: O(N*log(M)) where N is the number of elements in nums and M is the maximum value in nums.  Converting a number to a string takes logarithmic time with respect to the number's value.
+# Space Complexity: O(1) since we're not using any extra space that scales with the input size. The string conversion is done within the loop and doesn't persist.
 
-
-            dp[i] = max(dp[i-1], dp[i-2] + nums[i])
-            
-
-        return dp[n-1]
 
 # Test Cases
-sol = Solution()
-print(sol.maxNonAdjacentJumpSum([1, 2, 3, 1]))  # Output: 4
-print(sol.maxNonAdjacentJumpSum([2, 7, 9, 3, 1]))  # Output: 12
-print(sol.maxNonAdjacentJumpSum([1,2,3])) # Output: 3
-print(sol.maxNonAdjacentJumpSum([1,2,3,4,5,6,7,8])) # Output: 16
-print(sol.maxNonAdjacentJumpSum([1])) # Output: 1
-print(sol.maxNonAdjacentJumpSum([])) # Output: 0
+solution = Solution()
+
+# Test Case 1
+nums1 = [12, 345, 2, 6, 7896]
+print(f"Test Case 1: {solution.findNumbers(nums1)}")  # Expected Output: 2
+
+# Test Case 2
+nums2 = [555, 901, 482, 1771]
+print(f"Test Case 2: {solution.findNumbers(nums2)}")  # Expected Output: 1
+
+# Test Case 3 - Empty array
+nums3 = []
+print(f"Test Case 3: {solution.findNumbers(nums3)}")  # Expected Output: 0
+
+# Test Case 4 - Single element with even digits
+nums4 = [10]
+print(f"Test Case 4: {solution.findNumbers(nums4)}")  # Expected Output: 1
+
+# Test Case 5 - Single element with odd digits
+nums5 = [1]
+print(f"Test Case 5: {solution.findNumbers(nums5)}")  # Expected Output: 0
+
+# Test Case 6 - Large numbers
+nums6 = [100000, 12, 345, 2]
+print(f"Test Case 6: {solution.findNumbers(nums6)}")  # Expected Output: 1
 
 
-
-
-'''
-Time Complexity: O(n) - We iterate through the `nums` array once.
-Space Complexity: O(n) - We use a DP array of size n.  Could be optimized to O(1) by using only the previous two DP values.
-'''
 ```
