@@ -1,89 +1,69 @@
 ```python
 '''
-# Maximum Sum of Non-Adjacent Elements in a Circular Array
-# Difficulty: Medium
+# Check for Even Digits
+# Difficulty: Easy
 
 # Problem Description:
-# Given a circular integer array nums, return the maximum possible sum of a non-empty subarray of nums, where non-adjacent elements are chosen.
-# A circular array means the end of the array connects to the beginning of the array.  Formally, the next element of nums[i] is nums[(i + 1) % n] and the previous element of nums[i] is nums[(i - 1 + n) % n], where n is the length of nums.
-# A subarray may only include each element of the original array once.
-
+# Given an integer num, return True if every digit in the number is even, and False otherwise.
 
 # Examples:
 # Example 1:
-# Input: nums = [1,2,3,1]
-# Output: 4
-# Explanation: You can take elements at index 0 and 2 to form a sum of 1 + 3 = 4.
+# Input: num = 2468
+# Output: True
+# Explanation: All digits are even: 2, 4, 6, 8.
 
 # Example 2:
-# Input: nums = [2,7,9,3,1]
-# Output: 11
-# Explanation: You can take elements at indices 0, 2, and 4 to form a sum of 2 + 9 + 1 = 11.
+# Input: num = 1357
+# Output: False
+# Explanation: 1, 3, 5, and 7 are all odd digits.
+
+# Example 3:
+# Input: num = 24680
+# Output: True
+# Explanation: All digits are even: 2, 4, 6, 8, 0.
 
 # Constraints:
-# 1 <= nums.length <= 3 * 10^4
-# -10^4 <= nums[i] <= 10^4
+# 0 <= num <= 10^6
 '''
 
 class Solution:
-    def rob(self, nums: list[int]) -> int:
+    def areDigitsEven(self, num: int) -> bool:
         """
-        Calculates the maximum sum of non-adjacent elements in a circular array.
+        Checks if all digits of a number are even.
 
         Args:
-            nums: The input circular integer array.
+            num: The input integer.
 
         Returns:
-            The maximum possible sum.
+            True if all digits are even, False otherwise.
         """
-        n = len(nums)
-        if n == 1:
-            return nums[0]
+
+        # Convert the number to a string to iterate through its digits
+        num_str = str(num)
+
+        # Iterate through each digit
+        for digit in num_str:
+            # Convert the digit back to an integer
+            digit_int = int(digit)
+
+            # If any digit is odd, return False
+            if digit_int % 2 != 0:
+                return False
         
-        # Handle the circularity by considering two cases:
-        # 1. Include the first element, exclude the last
-        # 2. Exclude the first element, include the last
-        return max(self.house_robber(nums[:-1]), self.house_robber(nums[1:]))
+        # If all digits are even, return True
+        return True
 
-    def house_robber(self, nums: list[int]) -> int:
-        """
-        Helper function to solve the standard house robber problem (non-circular).
-        Uses dynamic programming to store maximum sums at each index.
-
-        Args:
-            nums: The input integer array.
-
-        Returns:
-            The maximum possible sum of non-adjacent elements.
-        """
-
-        n = len(nums)
-        if not n:  # Handle empty input. Should not happen in main context, but good practice
-            return 0
-        if n == 1:
-            return nums[0]
-
-        dp = [0] * n
-        dp[0] = nums[0]
-        dp[1] = max(nums[0], nums[1])
-
-        for i in range(2, n):
-            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
-
-        return dp[n - 1]
+# Time Complexity: O(log(n)), where n is the input number. The number of digits is proportional to the logarithm of the number.
+# Space Complexity: O(log(n)), due to the string conversion.  We can also do this in O(1) space if we operate directly on the integer with division and modulo, but the string approach is arguably more readable for an "Easy" level problem.
 
 
-# Time Complexity: O(N), where N is the number of elements in the array. We traverse the array twice.
-# Space Complexity: O(N) for the dp array in the house_robber helper function.
-
-
-# Test cases
+# Test Cases
 solution = Solution()
-print(solution.rob([1, 2, 3, 1]))  # Output: 4
-print(solution.rob([2, 7, 9, 3, 1]))  # Output: 11
-print(solution.rob([1]))  # Output: 1
-print(solution.rob([2,3,2])) # Output: 3
-print(solution.rob([1,3,1,3,100])) # Output 103
-
+print(solution.areDigitsEven(2468))  # Output: True
+print(solution.areDigitsEven(1357))  # Output: False
+print(solution.areDigitsEven(24680)) # Output: True
+print(solution.areDigitsEven(0))   # Output: True
+print(solution.areDigitsEven(102))  # Output: False
+print(solution.areDigitsEven(2222)) # Output: True
 
 ```
