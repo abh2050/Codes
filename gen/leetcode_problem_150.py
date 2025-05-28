@@ -1,0 +1,66 @@
+```python
+'''
+# Check if Number is Within Range
+# Difficulty: Easy
+
+# Problem Description:
+# Given an integer `num` and a closed interval represented by two integers `lower` and `upper` (inclusive), 
+# return `True` if `num` falls within the interval (including the boundaries), and `False` otherwise.
+
+# Examples:
+# Example 1:
+# Input: num = 5, lower = 1, upper = 10
+# Output: True
+# Explanation: 5 is within the interval [1, 10].
+
+# Example 2:
+# Input: num = 15, lower = 1, upper = 10
+# Output: False
+# Explanation: 15 is outside the interval [1, 10].
+
+# Example 3:
+# Input: num = 1, lower = 1, upper = 1
+# Output: True
+# Explanation: 1 is within the interval [1, 1].
+
+
+# Constraints:
+# -1000 <= num <= 1000
+# -1000 <= lower <= 1000
+# -1000 <= upper <= 1000
+# lower <= upper 
+'''
+
+class Solution:
+    def isWithinRange(self, num: int, lower: int, upper: int) -> bool:
+        """
+        Checks if a number is within a given range (inclusive).
+
+        Args:
+            num: The integer to check.
+            lower: The lower bound of the interval.
+            upper: The upper bound of the interval.
+
+        Returns:
+            True if num is within the interval [lower, upper], False otherwise.
+        """
+        return lower <= num <= upper  # Direct comparison for efficiency
+
+
+# Time Complexity: O(1) - Constant time comparison.
+# Space Complexity: O(1) - No extra space used.
+
+
+
+# Test cases
+solution = Solution()
+
+print(solution.isWithinRange(5, 1, 10))  # Output: True
+print(solution.isWithinRange(15, 1, 10)) # Output: False
+print(solution.isWithinRange(1, 1, 1))  # Output: True
+print(solution.isWithinRange(-5, -10, 0))  # Output: True
+print(solution.isWithinRange(10, 1, 10)) # Output: True # Edge case: upper bound
+print(solution.isWithinRange(1, 1, 10)) # Output: True # Edge case: lower bound
+
+
+```
