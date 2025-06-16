@@ -11,3 +11,4 @@ youtube_search
 langgraph
 chromadb
 langchain-chroma
+duckduckgo-search
